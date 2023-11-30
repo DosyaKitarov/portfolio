@@ -1,0 +1,35 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("Montserrat.ttf") format("ttf");
+}
+body {
+  font-family: Montserrat;
+}
+
+.mainBlackBg {
+  background-color: #19142A;
+}
+
+.mainRedBg {
+  background-color: #FF4040;
+}
+
+.mainRedText {
+  color: #FF4040;
+}
+
+.mainPurpleBg {
+  background-color: #2A2344;
+}
+
+.nav {
+  margin-right: 5%;
+}
+.nav .mainRedBg {
+  border-radius: 10px;
+}
+.nav li a {
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=output.css.map */
