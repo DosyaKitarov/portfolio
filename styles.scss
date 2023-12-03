@@ -4,9 +4,11 @@
 }
 
 $mainBlackColor:#19142A;
-$mainRedColor: #FF4040;
+$mainRedColor: #ff4242;
 $mainPurpleColor: #2A2344;
 body {
+    position: relative;
+    z-index: 2;
     font-family: Montserrat;
 }
 
@@ -26,14 +28,54 @@ body {
     background-color: $mainPurpleColor
 }
 
-.nav {
-    margin-right: 5%;
+.textBold {
+    font-weight: bold;
+}
+
+.mainPage {
+    .mainRedBg {
+        background-color: rgba(255, 66, 66, 0.2);
+        border-radius: 21px;
+    }
+    .myname {
+        font-size: 40px;
+        width: auto;
+    }
+    .designer {
+        .mainRedText {
+            color: transparent;
+            -webkit-text-stroke: 3px $mainRedColor;
+        }
+    }
+    .mainRedText {
+        font-size: 70px;
+    }
+}
+
+.top-line {
     .mainRedBg {
         border-radius: 10px;
     }
     li {
         a {
             font-weight: bold;
+            font-size: 20px;
         }
+    }
+    .nav {
+        margin-right: 5%;
+    }
+    .offcanvas-body {
+        .mainRedBg {
+            width: fit-content;
+        }
+    }
+}
+
+.decor {
+    z-index: 1;
+    overflow: hidden;
+    .miniCircleRight {
+        margin-top: 0%;
     }
 }
