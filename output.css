@@ -24,24 +24,40 @@ body {
   background-color: #2A2344;
 }
 
-.textBold {
-  font-weight: bold;
+.mainPage {
+  display: flex;
+  flex-direction: column;
 }
-
 .mainPage .mainRedBg {
   background-color: rgba(255, 66, 66, 0.2);
   border-radius: 21px;
 }
-.mainPage .myname {
-  font-size: 40px;
-  width: auto;
+.mainPage .myName {
+  color: #ffffff;
+  width: fit-content;
+  font-size: 2.5dvw;
+  font-weight: bold;
+  padding: 0 1% 0 1%;
+  margin-left: 5%;
 }
-.mainPage .designer .mainRedText {
+.mainPage .whoAmI {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.mainPage .whoAmI p {
+  color: #ff4242;
+  font-weight: bold;
+  font-size: 5dvw;
+  text-align: center;
+}
+.mainPage .whoAmI img {
+  width: 30%;
+}
+.mainPage .whoAmI .designer {
   color: transparent;
   -webkit-text-stroke: 3px #ff4242;
-}
-.mainPage .mainRedText {
-  font-size: 70px;
 }
 
 .top-line .mainRedBg {
@@ -49,7 +65,7 @@ body {
 }
 .top-line li a {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 1.3dvw;
 }
 .top-line .nav {
   margin-right: 5%;
@@ -64,6 +80,28 @@ body {
 }
 .decor .miniCircleRight {
   margin-top: 0%;
+}
+
+@media screen and (max-width: 768px) {
+  .mainPage .myName {
+    font-size: 7dvw;
+  }
+  .mainPage .whoAmI {
+    flex-direction: column;
+  }
+  .mainPage .whoAmI p {
+    font-size: 13dvw;
+  }
+  .mainPage .whoAmI img {
+    width: 70dvw;
+  }
+  .mainPage .whoAmI .designer {
+    color: transparent;
+    -webkit-text-stroke: 3px #ff4242;
+  }
+  .top-line li a {
+    font-size: 5dvw;
+  }
 }
 
 /*# sourceMappingURL=output.css.map */
