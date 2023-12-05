@@ -4,12 +4,9 @@
 }
 
 $mainBlackColor:#19142A;
-$mainRedColor: #ff4242;
+$mainRedColor: #FF4040;
 $mainPurpleColor: #2A2344;
-$mainWhiteColor: #ffffff;
 body {
-    position: relative;
-    z-index: 2;
     font-family: Montserrat;
 }
 
@@ -29,94 +26,14 @@ body {
     background-color: $mainPurpleColor
 }
 
-.mainPage {
-    display: flex;
-    flex-direction: column;
-    .mainRedBg {
-        background-color: rgba(255, 66, 66, 0.2);
-        border-radius: 21px;
-    }
-    .myName {
-        color: $mainWhiteColor;
-        width: fit-content;
-        font-size: 2.5dvw;
-        font-weight: bold;
-        padding: 0 1% 0 1%;
-        margin-left: 5%;
-    }
-    .whoAmI {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        p {
-            color: $mainRedColor;
-            font-weight: bold;
-            font-size: 5dvw;
-            text-align: center;
-        }
-        img {
-            width: 30%;
-        }
-        .designer {
-            color: transparent;
-            -webkit-text-stroke: 3px $mainRedColor;
-        }
-    }
-}
-
-.top-line {
+.nav {
+    margin-right: 5%;
     .mainRedBg {
         border-radius: 10px;
     }
     li {
         a {
             font-weight: bold;
-            font-size: 1.3dvw;
-        }
-    }
-    .nav {
-        margin-right: 5%;
-    }
-    .offcanvas-body {
-        .mainRedBg {
-            width: fit-content;
-        }
-    }
-}
-
-.decor {
-    z-index: 1;
-    overflow: hidden;
-    .miniCircleRight {
-        margin-top: 0%;
-    }
-}
-
-@media screen and (max-width:768px) {
-    .mainPage {
-        .myName {
-            font-size: 7dvw;
-        }
-        .whoAmI {
-            flex-direction: column;
-            p {
-                font-size: 13dvw;
-            }
-            img {
-                width: 70dvw;
-            }
-            .designer {
-                color: transparent;
-                -webkit-text-stroke: 3px $mainRedColor;
-            }
-        }
-    }
-    .top-line {
-        li {
-            a {
-                font-size: 5dvw;
-            }
         }
     }
 }

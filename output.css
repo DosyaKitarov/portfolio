@@ -3,8 +3,6 @@
   src: url("Montserrat.ttf") format("ttf");
 }
 body {
-  position: relative;
-  z-index: 2;
   font-family: Montserrat;
 }
 
@@ -13,95 +11,25 @@ body {
 }
 
 .mainRedBg {
-  background-color: #ff4242;
+  background-color: #FF4040;
 }
 
 .mainRedText {
-  color: #ff4242;
+  color: #FF4040;
 }
 
 .mainPurpleBg {
   background-color: #2A2344;
 }
 
-.mainPage {
-  display: flex;
-  flex-direction: column;
-}
-.mainPage .mainRedBg {
-  background-color: rgba(255, 66, 66, 0.2);
-  border-radius: 21px;
-}
-.mainPage .myName {
-  color: #ffffff;
-  width: fit-content;
-  font-size: 2.5dvw;
-  font-weight: bold;
-  padding: 0 1% 0 1%;
-  margin-left: 5%;
-}
-.mainPage .whoAmI {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-.mainPage .whoAmI p {
-  color: #ff4242;
-  font-weight: bold;
-  font-size: 5dvw;
-  text-align: center;
-}
-.mainPage .whoAmI img {
-  width: 30%;
-}
-.mainPage .whoAmI .designer {
-  color: transparent;
-  -webkit-text-stroke: 3px #ff4242;
-}
-
-.top-line .mainRedBg {
-  border-radius: 10px;
-}
-.top-line li a {
-  font-weight: bold;
-  font-size: 1.3dvw;
-}
-.top-line .nav {
+.nav {
   margin-right: 5%;
 }
-.top-line .offcanvas-body .mainRedBg {
-  width: fit-content;
+.nav .mainRedBg {
+  border-radius: 10px;
 }
-
-.decor {
-  z-index: 1;
-  overflow: hidden;
-}
-.decor .miniCircleRight {
-  margin-top: 0%;
-}
-
-@media screen and (max-width: 768px) {
-  .mainPage .myName {
-    font-size: 7dvw;
-  }
-  .mainPage .whoAmI {
-    flex-direction: column;
-  }
-  .mainPage .whoAmI p {
-    font-size: 13dvw;
-  }
-  .mainPage .whoAmI img {
-    width: 70dvw;
-  }
-  .mainPage .whoAmI .designer {
-    color: transparent;
-    -webkit-text-stroke: 3px #ff4242;
-  }
-  .top-line li a {
-    font-size: 5dvw;
-  }
+.nav li a {
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=output.css.map */
