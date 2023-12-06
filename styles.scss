@@ -11,6 +11,7 @@ body {
     position: relative;
     z-index: 2;
     font-family: Montserrat;
+    overflow-x: hidden;
 }
 
 .mainBlackBg {
@@ -29,7 +30,28 @@ body {
     background-color: $mainPurpleColor
 }
 
+.top-line {
+    .mainRedBg {
+        border-radius: 10px;
+    }
+    li {
+        a {
+            font-weight: bold;
+            font-size: 1.3dvw;
+        }
+    }
+    .nav {
+        margin-right: 5%;
+    }
+    .offcanvas-body {
+        .mainRedBg {
+            width: fit-content;
+        }
+    }
+}
+
 .mainPage {
+    position: relative;
     display: flex;
     flex-direction: column;
     .mainRedBg {
@@ -65,35 +87,29 @@ body {
     }
 }
 
-.top-line {
-    .mainRedBg {
-        border-radius: 10px;
-    }
-    li {
-        a {
-            font-weight: bold;
-            font-size: 1.3dvw;
-        }
-    }
-    .nav {
-        margin-right: 5%;
-    }
-    .offcanvas-body {
-        .mainRedBg {
-            width: fit-content;
-        }
-    }
+.title {
+    text-align: center;
+    color: $mainWhiteColor;
+    font-size: 5dvw;
+    font-weight: bold;
+    padding-top: 3%;
 }
 
 .decor {
-    z-index: 1;
-    overflow: hidden;
-    .miniCircleRight {
-        margin-top: 0%;
+    z-index: 0;
+    img {
+        overflow: hidden;
     }
+    position: absolute;
 }
 
-@media screen and (max-width:768px) {
+@media (max-width:768px) {
+    .rectangle {
+        display: none;
+    }
+    .circle {
+        display: none;
+    }
     .mainPage {
         .myName {
             font-size: 7dvw;

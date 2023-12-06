@@ -6,6 +6,7 @@ body {
   position: relative;
   z-index: 2;
   font-family: Montserrat;
+  overflow-x: hidden;
 }
 
 .mainBlackBg {
@@ -24,7 +25,22 @@ body {
   background-color: #2A2344;
 }
 
+.top-line .mainRedBg {
+  border-radius: 10px;
+}
+.top-line li a {
+  font-weight: bold;
+  font-size: 1.3dvw;
+}
+.top-line .nav {
+  margin-right: 5%;
+}
+.top-line .offcanvas-body .mainRedBg {
+  width: fit-content;
+}
+
 .mainPage {
+  position: relative;
   display: flex;
   flex-direction: column;
 }
@@ -60,29 +76,29 @@ body {
   -webkit-text-stroke: 3px #ff4242;
 }
 
-.top-line .mainRedBg {
-  border-radius: 10px;
-}
-.top-line li a {
+.title {
+  text-align: center;
+  color: #ffffff;
+  font-size: 5dvw;
   font-weight: bold;
-  font-size: 1.3dvw;
-}
-.top-line .nav {
-  margin-right: 5%;
-}
-.top-line .offcanvas-body .mainRedBg {
-  width: fit-content;
+  padding-top: 3%;
 }
 
 .decor {
-  z-index: 1;
+  z-index: 0;
+  position: absolute;
+}
+.decor img {
   overflow: hidden;
 }
-.decor .miniCircleRight {
-  margin-top: 0%;
-}
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
+  .rectangle {
+    display: none;
+  }
+  .circle {
+    display: none;
+  }
   .mainPage .myName {
     font-size: 7dvw;
   }
