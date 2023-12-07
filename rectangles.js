@@ -19,4 +19,6 @@ class rectangle {
     }
 }
 
-var rectangle1 = new rectangle(".mainPage", 1, "96%", "93%")
+var rectangle1 = new rectangle(".mainPage", 1, "96%", "92%");
+var rectangle2 = new rectangle(".aboutMe", 2, "0", "92%");
+var rectangle3 = new rectangle(".experience", 3, "96%", "88%");

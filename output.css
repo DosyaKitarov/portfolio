@@ -76,10 +76,65 @@ body {
   -webkit-text-stroke: 3px #ff4242;
 }
 
+.aboutMe {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.aboutMe .section {
+  display: flex;
+  flex-direction: row;
+  gap: 25dvw;
+  align-items: center;
+  margin-bottom: 2dvw;
+}
+.aboutMe p {
+  font-size: 2dvw;
+  color: #ffffff;
+  width: 42dvw;
+}
+.aboutMe .square-with-text {
+  width: 11dvw;
+  height: 11dvw;
+  border-radius: 20px;
+  background-color: #ff4242;
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+.aboutMe .square-with-text p {
+  color: #ffffff;
+  font-size: 1.5dvw;
+  text-shadow: 2px 2px 4px rgb(0, 0, 0);
+  margin: 0;
+}
+
+.experience {
+  position: relative;
+  margin: 0;
+}
+.experience .job {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.devSkills .skills {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.devSkills .skills .grid-item {
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: center;
+}
+
 .title {
   text-align: center;
   color: #ffffff;
-  font-size: 5dvw;
+  font-size: 4.5dvw;
   font-weight: bold;
   padding-top: 3%;
 }
@@ -117,6 +172,29 @@ body {
   }
   .top-line li a {
     font-size: 5dvw;
+  }
+  .aboutMe {
+    text-align: center;
+    gap: 2dvh;
+  }
+  .aboutMe .section {
+    flex-direction: column;
+    gap: 5dvh;
+  }
+  .aboutMe p {
+    font-size: 4dvh;
+    width: auto;
+  }
+  .aboutMe .square-with-text {
+    width: 20dvh;
+    height: 20dvh;
+    justify-content: center;
+  }
+  .aboutMe .square-with-text p {
+    font-size: 3.5dvh;
+  }
+  .experience img {
+    width: 35dvw;
   }
 }
 
