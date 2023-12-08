@@ -22,3 +22,7 @@ class rectangle {
 var rectangle1 = new rectangle(".mainPage", 1, "96%", "92%");
 var rectangle2 = new rectangle(".aboutMe", 2, "0", "92%");
 var rectangle3 = new rectangle(".experience", 3, "96%", "88%");
+var rectangle4 = new rectangle(".devSkills", 4, "0%", "88%");
+var rectangle5 = new rectangle(".devProjects", 5, "96%", "91%");
+var rectangle6 = new rectangle(".designerSkills", 6, "0%", "89%");
+var rectangle7 = new rectangle(".designerProjects", 7, "96%", "92%");

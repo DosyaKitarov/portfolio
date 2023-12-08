@@ -22,4 +22,5 @@ class dashCircle {
 var circle1 = new dashCircle(".mainPage", 1, "90%", "5%");
 var circle2 = new dashCircle(".mainPage", 2, "-10%", "50%");
 var circle3 = new dashCircle(".experience", 3, "90%", "-5%");
-var circle4 = new dashCircle(".experience", 4, "7%", "70%");
+var circle4 = new dashCircle(".experience", 4, "2%", "50%");
+var circle5 = new dashCircle(".devProjects", 5, "-10%", "-50%");

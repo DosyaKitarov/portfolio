@@ -121,14 +121,345 @@ body {
   align-items: center;
 }
 
-.devSkills .skills {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+.devSkills {
+  position: relative;
+  padding-bottom: 10dvw;
 }
-.devSkills .skills .grid-item {
-  border: 1px solid #ccc;
-  padding: 20px;
+.devSkills .skills {
+  display: flex;
+  flex-direction: column;
+}
+.devSkills .skills p {
   text-align: center;
+  color: #ffffff;
+  font-size: 3dvw;
+  margin: 0;
+}
+.devSkills .skills .line1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-top: 0.26dvw solid #ffffff;
+  border-bottom: 0.26dvw solid #ffffff;
+}
+.devSkills .skills .line1 .first {
+  flex-basis: 20%;
+}
+.devSkills .skills .line1 .second {
+  flex-basis: 0;
+  border-left: 0.26dvw solid #ffffff;
+  border-right: 0.26dvw solid #ffffff;
+  flex-basis: 50%;
+}
+.devSkills .skills .line1 .third {
+  flex-basis: 30%;
+}
+.devSkills .skills .line2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.devSkills .skills .line2 .first {
+  flex-basis: 40%;
+}
+.devSkills .skills .line2 .second {
+  flex-basis: 0;
+  border-left: 0.26dvw solid #ffffff;
+  border-right: 0.26dvw solid #ffffff;
+  flex-basis: 50%;
+}
+.devSkills .skills .line2 .third {
+  flex-basis: 10%;
+}
+.devSkills .skills .line3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-top: 0.26dvw solid #ffffff;
+  border-bottom: 0.26dvw solid #ffffff;
+}
+.devSkills .skills .line3 .first {
+  flex-basis: 30%;
+}
+.devSkills .skills .line3 .second {
+  flex-basis: 0;
+  border-left: 0.26dvw solid #ffffff;
+  border-right: 0.26dvw solid #ffffff;
+  flex-basis: 20%;
+}
+.devSkills .skills .line3 .third {
+  flex-basis: 50%;
+}
+.devSkills .skills .line4 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-bottom: 0.26dvw solid #ffffff;
+}
+.devSkills .skills .line4 .first {
+  flex-basis: 50%;
+}
+.devSkills .skills .line4 .third {
+  flex-basis: 0;
+  border-left: 0.26dvw solid #ffffff;
+  border-right: 0.26dvw solid #ffffff;
+  flex-basis: 50%;
+  border-right: none;
+}
+
+.devProjects {
+  position: relative;
+  padding-bottom: 10dvw;
+}
+.devProjects .card {
+  width: 41dvw;
+  border: 0.26dvw solid #ffffff;
+  border-radius: 0;
+  background-color: inherit;
+  justify-content: center;
+  margin: 0 auto;
+  text-align: center;
+}
+.devProjects .card .image-container {
+  position: relative;
+}
+.devProjects .card .image-container img {
+  width: 100%;
+  height: auto;
+}
+.devProjects .card .text-container {
+  border-top: 0.26dvw solid #ffffff;
+}
+.devProjects .card .text-container p {
+  color: #ffffff;
+  margin: 0;
+  font-size: 1.56dvw;
+}
+.devProjects .card .text-container .tools {
+  font-weight: lighter;
+}
+
+.designerSkills {
+  position: relative;
+  padding-bottom: 10dvw;
+}
+.designerSkills .skills {
+  display: flex;
+  flex-direction: column;
+}
+.designerSkills .skills p {
+  text-align: center;
+  color: #ffffff;
+  font-size: 3dvw;
+  margin: 0;
+}
+.designerSkills .skills .line1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-top: 0.26dvw solid #ffffff;
+  border-bottom: 0.26dvw solid #ffffff;
+}
+.designerSkills .skills .line1 .first {
+  flex-basis: 30%;
+}
+.designerSkills .skills .line1 .second {
+  flex-basis: 0;
+  border-left: 0.26dvw solid #ffffff;
+  border-right: 0.26dvw solid #ffffff;
+  flex-basis: 30%;
+}
+.designerSkills .skills .line1 .third {
+  flex-basis: 40%;
+}
+.designerSkills .skills .line2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.designerSkills .skills .line2 .first {
+  flex-basis: 40%;
+}
+.designerSkills .skills .line2 .second {
+  flex-basis: 0;
+  border-left: 0.26dvw solid #ffffff;
+  border-right: 0.26dvw solid #ffffff;
+  flex-basis: 40%;
+}
+.designerSkills .skills .line2 .third {
+  flex-basis: 20%;
+}
+.designerSkills .skills .line3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-top: 0.26dvw solid #ffffff;
+  border-bottom: 0.26dvw solid #ffffff;
+}
+.designerSkills .skills .line3 .first {
+  flex-basis: 20%;
+}
+.designerSkills .skills .line3 .second {
+  flex-basis: 0;
+  border-left: 0.26dvw solid #ffffff;
+  border-right: 0.26dvw solid #ffffff;
+  flex-basis: 40%;
+}
+.designerSkills .skills .line3 .third {
+  flex-basis: 40%;
+}
+.designerSkills .skills .line4 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-bottom: 0.26dvw solid #ffffff;
+}
+.designerSkills .skills .line4 .first {
+  flex-basis: 50%;
+}
+.designerSkills .skills .line4 .third {
+  flex-basis: 0;
+  border-left: 0.26dvw solid #ffffff;
+  border-right: 0.26dvw solid #ffffff;
+  flex-basis: 50%;
+  border-right: none;
+}
+
+.returnButton {
+  background-color: inherit;
+  color: #ff4242;
+  font-size: 2dvw;
+  font-weight: bold;
+  padding: 13.5px 47px;
+  border-radius: 32px;
+  border: 7px solid #ff4242;
+  width: fit-content;
+  margin: 2dvw;
+  cursor: pointer;
+}
+.returnButton :hover {
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+.designerProjects {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0;
+  gap: 2dvw;
+  padding-bottom: 5dvw;
+}
+.designerProjects img {
+  width: 20dvw;
+}
+.designerProjects .column {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  align-items: center;
+  gap: 4.5dvw;
+}
+.designerProjects .column img {
+  width: 40dvw;
+}
+.designerProjects .column button {
+  background-color: inherit;
+  color: #ff4242;
+  font-size: 2dvw;
+  font-weight: bold;
+  padding: 13.5px 47px;
+  border-radius: 32px;
+  border: 7px solid #ff4242;
+  width: fit-content;
+  cursor: pointer;
+}
+.designerProjects .column button:hover {
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+.contactMe {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  color: #ffffff;
+  justify-content: center;
+  margin: 0;
+  gap: 10dvw;
+  padding-top: 7dvw;
+  padding-bottom: 2dvw;
+}
+.contactMe .contacts {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5dvw;
+}
+.contactMe .contacts .titletext {
+  font-size: 4.15dvw;
+  font-weight: bold;
+}
+.contactMe .contacts .subtitle {
+  color: #ADADAD;
+  width: 27dvw;
+}
+.contactMe .contacts .type p {
+  font-weight: lighter;
+  margin-bottom: 3dvw;
+}
+.contactMe .contacts .type img {
+  width: 3.48dvw;
+  margin-right: 1dvw;
+}
+.contactMe .leaveMessage {
+  display: flex;
+  flex-direction: column;
+  gap: 2dvw;
+}
+.contactMe .leaveMessage .titletext {
+  font-size: 4.15dvw;
+  font-weight: bold;
+}
+.contactMe .leaveMessage .information {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2dvw;
+  width: 40dvw;
+}
+.contactMe .leaveMessage .information .input-field {
+  flex-basis: 45%;
+  background-color: inherit;
+  color: #ffffff;
+  border: 0.26dvw solid #ffffff;
+  border-radius: 1dvw;
+  font-size: 1.5dvw;
+}
+.contactMe .leaveMessage .information .message {
+  background-color: inherit;
+  color: #ffffff;
+  border: 0.26dvw solid #ffffff;
+  border-radius: 1dvw;
+  font-size: 1.5dvw;
+  font-style: italic;
+  height: 15dvw;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  flex-basis: 95%;
+}
+.contactMe .leaveMessage button {
+  background-color: #ffffff;
+  color: black;
+  font-size: 2dvw;
+  padding: 13.5px 47px;
+  border-radius: 1dvw;
+  width: fit-content;
+  cursor: pointer;
+}
+.contactMe .leaveMessage button:hover {
+  color: #ff4242;
+  border-color: #ffffff;
 }
 
 .title {
@@ -137,6 +468,8 @@ body {
   font-size: 4.5dvw;
   font-weight: bold;
   padding-top: 3%;
+  padding-bottom: 3%;
+  margin: 0;
 }
 
 .decor {
@@ -145,6 +478,50 @@ body {
 }
 .decor img {
   overflow: hidden;
+}
+
+.allDesign .images {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  gap: 3dvw;
+}
+.allDesign .images img {
+  max-height: 40dvw;
+  max-width: 90dvw;
+}
+.allDesign p {
+  color: #ffffff;
+  font-size: 3dvw;
+  text-align: center;
+  margin: 3dvw;
+  flex: none;
+}
+.allDesign .memLogobook {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1dvw;
+  justify-content: center;
+  margin: 1dvw;
+}
+.allDesign .memLogobook img {
+  max-height: 40dvw;
+  max-width: 30dvw;
+}
+.allDesign .myLogo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: 1dvw;
+  justify-content: center;
+  margin: 1dvw;
+}
+.allDesign .myLogo img {
+  max-height: 13dvw;
+  max-width: 13dvw;
 }
 
 @media (max-width: 768px) {
@@ -195,6 +572,109 @@ body {
   }
   .experience img {
     width: 35dvw;
+  }
+  .devSkills .skills p {
+    font-size: 5dvh;
+  }
+  .devSkills .skills .line1 {
+    flex-wrap: wrap;
+  }
+  .devSkills .skills .line1 .first {
+    flex-basis: 100%;
+    border-bottom: 0.26dvw solid #ffffff;
+  }
+  .devSkills .skills .line1 .second {
+    flex-basis: 50%;
+    border-left: none;
+  }
+  .devSkills .skills .line1 .third {
+    flex-basis: 50%;
+  }
+  .devSkills .skills .line2 .second {
+    border-right: none;
+  }
+  .devSkills .skills .line2 .third {
+    display: none;
+  }
+  .devSkills .skills .line4 .third {
+    display: none;
+  }
+  .devProjects .card {
+    width: 70dvh;
+  }
+  .devProjects .card .text-container p {
+    font-size: 3dvh;
+  }
+  .designerSkills .skills p {
+    font-size: 5dvh;
+  }
+  .designerSkills .skills .line1 .first {
+    flex-basis: 100%;
+  }
+  .designerSkills .skills .line1 .second {
+    display: none;
+  }
+  .designerSkills .skills .line1 .third {
+    display: none;
+  }
+  .designerSkills .skills .line2 .second {
+    border-right: none;
+  }
+  .designerSkills .skills .line2 .third {
+    display: none;
+  }
+  .designerSkills .skills .line3 .first {
+    display: none;
+  }
+  .designerSkills .skills .line3 .second {
+    display: none;
+  }
+  .designerSkills .skills .line3 .third {
+    flex-basis: 100%;
+  }
+  .designerProjects {
+    flex-wrap: wrap;
+  }
+  .designerProjects img {
+    width: 40dvh;
+  }
+  .designerProjects .column img {
+    width: 80dvh;
+  }
+  .designerProjects .column button {
+    font-size: 3dvh;
+  }
+  .contactMe {
+    flex-direction: column;
+    text-align: center;
+  }
+  .contactMe .contacts .titletext {
+    font-size: 10dvh;
+  }
+  .contactMe .contacts .subtitle {
+    font-size: 4dvh;
+    width: auto;
+  }
+  .contactMe .contacts .type {
+    font-size: 4dvh;
+  }
+  .contactMe .contacts .type img {
+    width: 7dvh;
+  }
+  .contactMe .leaveMessage {
+    padding: 3dvh;
+  }
+  .contactMe .leaveMessage .titletext {
+    font-size: 10dvh;
+  }
+  .contactMe .leaveMessage .information {
+    flex-direction: column;
+  }
+  .contactMe .leaveMessage .input-field {
+    font-size: 4dvh;
+  }
+  .contactMe .leaveMessage .message {
+    font-size: 4dvh;
   }
 }
 

@@ -132,14 +132,341 @@ body {
     }
 }
 
+@mixin line-styles {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+@mixin block-styles {
+    flex-basis: 0;
+    border-left: 0.26dvw solid $mainWhiteColor;
+    border-right: 0.26dvw solid $mainWhiteColor;
+}
+
 .devSkills {
+    position: relative;
+    padding-bottom: 10dvw;
     .skills {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        .grid-item {
-            border: 1px solid #ccc;
-            padding: 20px;
+        p {
             text-align: center;
+            color: $mainWhiteColor;
+            font-size: 3dvw;
+            margin: 0;
+        }
+        display: flex;
+        flex-direction: column;
+        @mixin line($border-top: false,
+        $border-bottom: false) {
+            @include line-styles;
+            @if $border-top {
+                border-top: 0.26dvw solid $mainWhiteColor;
+            }
+            @if $border-bottom {
+                border-bottom: 0.26dvw solid $mainWhiteColor;
+            }
+        }
+        @mixin block {
+            @include block-styles;
+        }
+        .line1 {
+            @include line($border-top: true, $border-bottom: true);
+            .first {
+                flex-basis: 20%;
+            }
+            .second {
+                @include block;
+                flex-basis: 50%;
+            }
+            .third {
+                flex-basis: 30%;
+            }
+        }
+        .line2 {
+            @include line;
+            .first {
+                flex-basis: 40%;
+            }
+            .second {
+                @include block;
+                flex-basis: 50%;
+            }
+            .third {
+                flex-basis: 10%;
+            }
+        }
+        .line3 {
+            @include line($border-top: true, $border-bottom: true);
+            .first {
+                flex-basis: 30%;
+            }
+            .second {
+                @include block;
+                flex-basis: 20%;
+            }
+            .third {
+                flex-basis: 50%;
+            }
+        }
+        .line4 {
+            @include line($border-bottom: true);
+            .first {
+                flex-basis: 50%;
+            }
+            .third {
+                @include block;
+                flex-basis: 50%;
+                border-right: none;
+            }
+        }
+    }
+}
+
+.devProjects {
+    position: relative;
+    padding-bottom: 10dvw;
+    .card {
+        width: 41dvw;
+        border: 0.26dvw solid $mainWhiteColor;
+        border-radius: 0;
+        background-color: inherit;
+        justify-content: center;
+        margin: 0 auto;
+        text-align: center;
+        .image-container {
+            position: relative;
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+        .text-container {
+            border-top: 0.26dvw solid $mainWhiteColor;
+            p {
+                color: $mainWhiteColor;
+                margin: 0;
+                font-size: 1.56dvw;
+            }
+            .tools {
+                font-weight: lighter;
+            }
+        }
+    }
+}
+
+.designerSkills {
+    position: relative;
+    padding-bottom: 10dvw;
+    .skills {
+        p {
+            text-align: center;
+            color: $mainWhiteColor;
+            font-size: 3dvw;
+            margin: 0;
+        }
+        display: flex;
+        flex-direction: column;
+        @mixin line($border-top: false,
+        $border-bottom: false) {
+            @include line-styles;
+            @if $border-top {
+                border-top: 0.26dvw solid $mainWhiteColor;
+            }
+            @if $border-bottom {
+                border-bottom: 0.26dvw solid $mainWhiteColor;
+            }
+        }
+        @mixin block {
+            @include block-styles;
+        }
+        .line1 {
+            @include line($border-top: true, $border-bottom: true);
+            .first {
+                flex-basis: 30%;
+            }
+            .second {
+                @include block;
+                flex-basis: 30%;
+            }
+            .third {
+                flex-basis: 40%;
+            }
+        }
+        .line2 {
+            @include line;
+            .first {
+                flex-basis: 40%;
+            }
+            .second {
+                @include block;
+                flex-basis: 40%;
+            }
+            .third {
+                flex-basis: 20%;
+            }
+        }
+        .line3 {
+            @include line($border-top: true, $border-bottom: true);
+            .first {
+                flex-basis: 20%;
+            }
+            .second {
+                @include block;
+                flex-basis: 40%;
+            }
+            .third {
+                flex-basis: 40%;
+            }
+        }
+        .line4 {
+            @include line($border-bottom: true);
+            .first {
+                flex-basis: 50%;
+            }
+            .third {
+                @include block;
+                flex-basis: 50%;
+                border-right: none;
+            }
+        }
+    }
+}
+
+.returnButton {
+    background-color: inherit;
+    color: $mainRedColor;
+    font-size: 2dvw;
+    font-weight: bold;
+    padding: 13.5px 47px;
+    border-radius: 32px;
+    border: 7px solid $mainRedColor;
+    width: fit-content;
+    margin: 2dvw;
+    cursor: pointer;
+     :hover {
+        color: $mainWhiteColor;
+        border-color: $mainWhiteColor;
+    }
+}
+
+.designerProjects {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0;
+    gap: 2dvw;
+    padding-bottom: 5dvw;
+    img {
+        width: 20dvw;
+    }
+    .column {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        align-items: center;
+        gap: 4.5dvw;
+        img {
+            width: 40dvw;
+        }
+        button {
+            background-color: inherit;
+            color: $mainRedColor;
+            font-size: 2dvw;
+            font-weight: bold;
+            padding: 13.5px 47px;
+            border-radius: 32px;
+            border: 7px solid $mainRedColor;
+            width: fit-content;
+            cursor: pointer;
+        }
+        button:hover {
+            color: $mainWhiteColor;
+            border-color: $mainWhiteColor;
+        }
+    }
+}
+
+.contactMe {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    color: $mainWhiteColor;
+    justify-content: center;
+    margin: 0;
+    gap: 10dvw;
+    padding-top: 7dvw;
+    padding-bottom: 2dvw;
+    .contacts {
+        display: flex;
+        flex-direction: column;
+        font-size: 1.5dvw;
+        .titletext {
+            font-size: 4.15dvw;
+            font-weight: bold;
+        }
+        .subtitle {
+            color: #ADADAD;
+            width: 27dvw;
+        }
+        .type {
+            p {
+                font-weight: lighter;
+                margin-bottom: 3dvw;
+            }
+            img {
+                width: 3.48dvw;
+                margin-right: 1dvw;
+            }
+        }
+    }
+    .leaveMessage {
+        display: flex;
+        flex-direction: column;
+        gap: 2dvw;
+        .titletext {
+            font-size: 4.15dvw;
+            font-weight: bold;
+        }
+        .information {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 2dvw;
+            width: 40dvw;
+            .input-field {
+                flex-basis: 45%;
+                background-color: inherit;
+                color: $mainWhiteColor;
+                border: 0.26dvw solid $mainWhiteColor;
+                border-radius: 1dvw;
+                font-size: 1.5dvw;
+            }
+            .message {
+                background-color: inherit;
+                color: $mainWhiteColor;
+                border: 0.26dvw solid $mainWhiteColor;
+                border-radius: 1dvw;
+                font-size: 1.5dvw;
+                font-style: italic;
+                height: 15dvw;
+                overflow-x: hidden;
+                text-overflow: ellipsis;
+                flex-basis: 95%;
+            }
+        }
+        button {
+            background-color: $mainWhiteColor;
+            color: black;
+            font-size: 2dvw;
+            padding: 13.5px 47px;
+            border-radius: 1dvw;
+            width: fit-content;
+            cursor: pointer;
+        }
+        button:hover {
+            color: $mainRedColor;
+            border-color: $mainWhiteColor;
         }
     }
 }
@@ -150,6 +477,8 @@ body {
     font-size: 4.5dvw;
     font-weight: bold;
     padding-top: 3%;
+    padding-bottom: 3%;
+    margin: 0;
 }
 
 .decor {
@@ -158,6 +487,52 @@ body {
         overflow: hidden;
     }
     position: absolute;
+}
+
+.allDesign {
+    .images {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0;
+        gap: 3dvw;
+        img {
+            max-height: 40dvw;
+            max-width: 90dvw;
+        }
+    }
+    p {
+        color: $mainWhiteColor;
+        font-size: 3dvw;
+        text-align: center;
+        margin: 3dvw;
+        flex: none;
+    }
+    .memLogobook {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1dvw;
+        justify-content: center;
+        margin: 1dvw;
+        img {
+            max-height: 40dvw;
+            max-width: 30dvw;
+        }
+    }
+    .myLogo {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        row-gap: 1dvw;
+        justify-content: center;
+        margin: 1dvw;
+        img {
+            max-height: 13dvw;
+            max-width: 13dvw;
+        }
+    }
 }
 
 @media (max-width:768px) {
@@ -215,6 +590,135 @@ body {
     .experience {
         img {
             width: 35dvw;
+        }
+    }
+    .devSkills {
+        .skills {
+            p {
+                font-size: 5dvh;
+            }
+            .line1 {
+                flex-wrap: wrap;
+                .first {
+                    flex-basis: 100%;
+                    border-bottom: 0.26dvw solid $mainWhiteColor;
+                }
+                .second {
+                    flex-basis: 50%;
+                    border-left: none;
+                }
+                .third {
+                    flex-basis: 50%;
+                }
+            }
+            .line2 {
+                .second {
+                    border-right: none;
+                }
+                .third {
+                    display: none;
+                }
+            }
+            .line4 {
+                .third {
+                    display: none;
+                }
+            }
+        }
+    }
+    .devProjects {
+        .card {
+            width: 70dvh;
+            .text-container {
+                p {
+                    font-size: 3dvh;
+                }
+            }
+        }
+    }
+    .designerSkills {
+        .skills {
+            p {
+                font-size: 5dvh;
+            }
+            .line1 {
+                .first {
+                    flex-basis: 100%;
+                }
+                .second {
+                    display: none;
+                }
+                .third {
+                    display: none;
+                }
+            }
+            .line2 {
+                .second {
+                    border-right: none;
+                }
+                .third {
+                    display: none;
+                }
+            }
+            .line3 {
+                .first {
+                    display: none;
+                }
+                .second {
+                    display: none;
+                }
+                .third {
+                    flex-basis: 100%;
+                }
+            }
+        }
+    }
+    .designerProjects {
+        flex-wrap: wrap;
+        img {
+            width: 40dvh;
+        }
+        .column {
+            img {
+                width: 80dvh;
+            }
+            button {
+                font-size: 3dvh;
+            }
+        }
+    }
+    .contactMe {
+        flex-direction: column;
+        text-align: center;
+        .contacts {
+            .titletext {
+                font-size: 10dvh;
+            }
+            .subtitle {
+                font-size: 4dvh;
+                width: auto;
+            }
+            .type {
+                font-size: 4dvh;
+                img {
+                    width: 7dvh;
+                }
+            }
+        }
+        .leaveMessage {
+            padding: 3dvh;
+            .titletext {
+                font-size: 10dvh;
+            }
+            .information {
+                flex-direction: column;
+            }
+            .input-field {
+                font-size: 4dvh;
+            }
+            .message {
+                font-size: 4dvh;
+            }
         }
     }
 }
