@@ -9,8 +9,8 @@ $mainPurpleColor: #2A2344;
 $mainWhiteColor: #ffffff;
 body {
     position: relative;
-    z-index: 2;
     font-family: Montserrat;
+    max-width: 100%;
     overflow-x: hidden;
 }
 
@@ -67,6 +67,7 @@ body {
         margin-left: 5%;
     }
     .whoAmI {
+        z-index: 2;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -359,6 +360,7 @@ body {
     padding-bottom: 5dvw;
     img {
         width: 20dvw;
+        max-width: 100%;
     }
     .column {
         display: flex;
@@ -368,6 +370,7 @@ body {
         gap: 4.5dvw;
         img {
             width: 40dvw;
+            max-width: 90%;
         }
         button {
             background-color: inherit;
@@ -460,7 +463,7 @@ body {
             color: black;
             font-size: 2dvw;
             padding: 13.5px 47px;
-            border-radius: 1dvw;
+            border-radius: 2dvw;
             width: fit-content;
             cursor: pointer;
         }
@@ -482,9 +485,9 @@ body {
 }
 
 .decor {
-    z-index: 0;
+    z-index: 1;
     img {
-        overflow: hidden;
+        overflow-x: hidden;
     }
     position: absolute;
 }
@@ -536,6 +539,9 @@ body {
 }
 
 @media (max-width:768px) {
+    body {
+        overflow-x: hidden;
+    }
     .rectangle {
         display: none;
     }
@@ -559,6 +565,9 @@ body {
                 -webkit-text-stroke: 3px $mainRedColor;
             }
         }
+    }
+    .title {
+        font-size: 3dvh;
     }
     .top-line {
         li {
@@ -589,13 +598,13 @@ body {
     }
     .experience {
         img {
-            width: 35dvw;
+            width: 25dvh;
         }
     }
     .devSkills {
         .skills {
             p {
-                font-size: 5dvh;
+                font-size: 3dvh;
             }
             .line1 {
                 flex-wrap: wrap;
@@ -629,9 +638,10 @@ body {
     .devProjects {
         .card {
             width: 70dvh;
+            max-width: 90%;
             .text-container {
                 p {
-                    font-size: 3dvh;
+                    font-size: 2dvh;
                 }
             }
         }
@@ -639,7 +649,7 @@ body {
     .designerSkills {
         .skills {
             p {
-                font-size: 5dvh;
+                font-size: 3dvh;
             }
             .line1 {
                 .first {
@@ -692,32 +702,39 @@ body {
         text-align: center;
         .contacts {
             .titletext {
-                font-size: 10dvh;
+                font-size: 5dvh;
             }
             .subtitle {
-                font-size: 4dvh;
+                font-size: 2dvh;
                 width: auto;
             }
             .type {
-                font-size: 4dvh;
+                font-size: 2dvh;
                 img {
-                    width: 7dvh;
+                    width: 4dvh;
                 }
             }
         }
         .leaveMessage {
-            padding: 3dvh;
+            padding: 5dvh;
             .titletext {
-                font-size: 10dvh;
+                font-size: 5dvh;
             }
             .information {
                 flex-direction: column;
+                width: 80dvw;
+                .input-field {
+                    max-width: 200%;
+                    font-size: 2dvh;
+                }
+                .message {
+                    font-size: 4dvh;
+                    max-width: 100%
+                }
             }
-            .input-field {
-                font-size: 4dvh;
-            }
-            .message {
-                font-size: 4dvh;
+            button {
+                font-size: 2dvh;
+                border-radius: 2dvw;
             }
         }
     }

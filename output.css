@@ -4,8 +4,8 @@
 }
 body {
   position: relative;
-  z-index: 2;
   font-family: Montserrat;
+  max-width: 100%;
   overflow-x: hidden;
 }
 
@@ -57,6 +57,7 @@ body {
   margin-left: 5%;
 }
 .mainPage .whoAmI {
+  z-index: 2;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -353,6 +354,7 @@ body {
 }
 .designerProjects img {
   width: 20dvw;
+  max-width: 100%;
 }
 .designerProjects .column {
   display: flex;
@@ -363,6 +365,7 @@ body {
 }
 .designerProjects .column img {
   width: 40dvw;
+  max-width: 90%;
 }
 .designerProjects .column button {
   background-color: inherit;
@@ -453,7 +456,7 @@ body {
   color: black;
   font-size: 2dvw;
   padding: 13.5px 47px;
-  border-radius: 1dvw;
+  border-radius: 2dvw;
   width: fit-content;
   cursor: pointer;
 }
@@ -473,11 +476,11 @@ body {
 }
 
 .decor {
-  z-index: 0;
+  z-index: 1;
   position: absolute;
 }
 .decor img {
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .allDesign .images {
@@ -525,6 +528,9 @@ body {
 }
 
 @media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
   .rectangle {
     display: none;
   }
@@ -546,6 +552,9 @@ body {
   .mainPage .whoAmI .designer {
     color: transparent;
     -webkit-text-stroke: 3px #ff4242;
+  }
+  .title {
+    font-size: 3dvh;
   }
   .top-line li a {
     font-size: 5dvw;
@@ -571,10 +580,10 @@ body {
     font-size: 3.5dvh;
   }
   .experience img {
-    width: 35dvw;
+    width: 25dvh;
   }
   .devSkills .skills p {
-    font-size: 5dvh;
+    font-size: 3dvh;
   }
   .devSkills .skills .line1 {
     flex-wrap: wrap;
@@ -601,12 +610,13 @@ body {
   }
   .devProjects .card {
     width: 70dvh;
+    max-width: 90%;
   }
   .devProjects .card .text-container p {
-    font-size: 3dvh;
+    font-size: 2dvh;
   }
   .designerSkills .skills p {
-    font-size: 5dvh;
+    font-size: 3dvh;
   }
   .designerSkills .skills .line1 .first {
     flex-basis: 100%;
@@ -649,32 +659,39 @@ body {
     text-align: center;
   }
   .contactMe .contacts .titletext {
-    font-size: 10dvh;
+    font-size: 5dvh;
   }
   .contactMe .contacts .subtitle {
-    font-size: 4dvh;
+    font-size: 2dvh;
     width: auto;
   }
   .contactMe .contacts .type {
-    font-size: 4dvh;
+    font-size: 2dvh;
   }
   .contactMe .contacts .type img {
-    width: 7dvh;
+    width: 4dvh;
   }
   .contactMe .leaveMessage {
-    padding: 3dvh;
+    padding: 5dvh;
   }
   .contactMe .leaveMessage .titletext {
-    font-size: 10dvh;
+    font-size: 5dvh;
   }
   .contactMe .leaveMessage .information {
     flex-direction: column;
+    width: 80dvw;
   }
-  .contactMe .leaveMessage .input-field {
-    font-size: 4dvh;
+  .contactMe .leaveMessage .information .input-field {
+    max-width: 200%;
+    font-size: 2dvh;
   }
-  .contactMe .leaveMessage .message {
+  .contactMe .leaveMessage .information .message {
     font-size: 4dvh;
+    max-width: 100%;
+  }
+  .contactMe .leaveMessage button {
+    font-size: 2dvh;
+    border-radius: 2dvw;
   }
 }
 
