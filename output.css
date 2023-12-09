@@ -31,6 +31,7 @@ body {
 .top-line li a {
   font-weight: bold;
   font-size: 1.3dvw;
+  cursor: pointer;
 }
 .top-line .nav {
   margin-right: 5%;
