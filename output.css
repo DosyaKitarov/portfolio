@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Montserrat";
-  src: url("Montserrat.ttf") format("ttf");
+  src: url("Montserrat.ttf") format("truetype");
 }
 body {
   position: relative;
