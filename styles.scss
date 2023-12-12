@@ -37,7 +37,7 @@ body {
     li {
         a {
             font-weight: bold;
-            font-size: 1.3dvw;
+            font-size: 1.3vw;
             cursor: pointer;
         }
     }
@@ -62,7 +62,7 @@ body {
     .myName {
         color: $mainWhiteColor;
         width: fit-content;
-        font-size: 2.5dvw;
+        font-size: 2.5vw;
         font-weight: bold;
         padding: 0 1% 0 1%;
         margin-left: 5%;
@@ -76,7 +76,7 @@ body {
         p {
             color: $mainRedColor;
             font-weight: bold;
-            font-size: 5dvw;
+            font-size: 5vw;
             text-align: center;
         }
         img {
@@ -98,18 +98,18 @@ body {
     .section {
         display: flex;
         flex-direction: row;
-        gap: 25dvw;
+        gap: 25vw;
         align-items: center;
-        margin-bottom: 2dvw;
+        margin-bottom: 2vw;
     }
     p {
-        font-size: 2dvw;
+        font-size: 2vw;
         color: $mainWhiteColor;
-        width: 42dvw;
+        width: 42vw;
     }
     .square-with-text {
-        width: 11dvw;
-        height: 11dvw;
+        width: 11vw;
+        height: 11vw;
         border-radius: 20px;
         background-color: $mainRedColor;
         display: flex;
@@ -117,7 +117,7 @@ body {
         align-items: center;
         p {
             color: $mainWhiteColor;
-            font-size: 1.5dvw;
+            font-size: 1.5vw;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
             margin: 0;
         }
@@ -142,18 +142,18 @@ body {
 
 @mixin block-styles {
     flex-basis: 0;
-    border-left: 0.26dvw solid $mainWhiteColor;
-    border-right: 0.26dvw solid $mainWhiteColor;
+    border-left: 0.26vw solid $mainWhiteColor;
+    border-right: 0.26vw solid $mainWhiteColor;
 }
 
 .devSkills {
     position: relative;
-    padding-bottom: 10dvw;
+    padding-bottom: 10vw;
     .skills {
         p {
             text-align: center;
             color: $mainWhiteColor;
-            font-size: 3dvw;
+            font-size: 3vw;
             margin: 0;
         }
         display: flex;
@@ -162,10 +162,10 @@ body {
         $border-bottom: false) {
             @include line-styles;
             @if $border-top {
-                border-top: 0.26dvw solid $mainWhiteColor;
+                border-top: 0.26vw solid $mainWhiteColor;
             }
             @if $border-bottom {
-                border-bottom: 0.26dvw solid $mainWhiteColor;
+                border-bottom: 0.26vw solid $mainWhiteColor;
             }
         }
         @mixin block {
@@ -226,10 +226,10 @@ body {
 
 .devProjects {
     position: relative;
-    padding-bottom: 10dvw;
+    padding-bottom: 10vw;
     .card {
-        width: 41dvw;
-        border: 0.26dvw solid $mainWhiteColor;
+        width: 41vw;
+        border: 0.26vw solid $mainWhiteColor;
         border-radius: 0;
         background-color: inherit;
         justify-content: center;
@@ -243,11 +243,11 @@ body {
             }
         }
         .text-container {
-            border-top: 0.26dvw solid $mainWhiteColor;
+            border-top: 0.26vw solid $mainWhiteColor;
             p {
                 color: $mainWhiteColor;
                 margin: 0;
-                font-size: 1.56dvw;
+                font-size: 1.56vw;
             }
             .tools {
                 font-weight: lighter;
@@ -258,12 +258,12 @@ body {
 
 .designerSkills {
     position: relative;
-    padding-bottom: 10dvw;
+    padding-bottom: 10vw;
     .skills {
         p {
             text-align: center;
             color: $mainWhiteColor;
-            font-size: 3dvw;
+            font-size: 3vw;
             margin: 0;
         }
         display: flex;
@@ -272,10 +272,10 @@ body {
         $border-bottom: false) {
             @include line-styles;
             @if $border-top {
-                border-top: 0.26dvw solid $mainWhiteColor;
+                border-top: 0.26vw solid $mainWhiteColor;
             }
             @if $border-bottom {
-                border-bottom: 0.26dvw solid $mainWhiteColor;
+                border-bottom: 0.26vw solid $mainWhiteColor;
             }
         }
         @mixin block {
@@ -340,10 +340,10 @@ body {
     flex-direction: row;
     justify-content: center;
     margin: 0;
-    gap: 2dvw;
-    padding-bottom: 5dvw;
+    gap: 2vw;
+    padding-bottom: 5vw;
     img {
-        width: 20dvw;
+        width: 20vw;
         max-width: 100%;
     }
     .column {
@@ -351,15 +351,15 @@ body {
         flex-direction: column;
         margin: 0;
         align-items: center;
-        gap: 4.5dvw;
+        gap: 4.5vw;
         img {
-            width: 40dvw;
+            width: 40vw;
             max-width: 90%;
         }
         button {
             background-color: inherit;
             color: $mainRedColor;
-            font-size: 2dvw;
+            font-size: 2vw;
             font-weight: bold;
             padding: 13.5px 47px;
             border-radius: 32px;
@@ -381,60 +381,60 @@ body {
     color: $mainWhiteColor;
     justify-content: center;
     margin: 0;
-    gap: 5dvw;
-    padding-top: 7dvw;
-    padding-bottom: 2dvw;
+    gap: 5vw;
+    padding-top: 7vw;
+    padding-bottom: 2vw;
     .contacts {
         display: flex;
         flex-direction: column;
-        font-size: 1.5dvw;
+        font-size: 1.5vw;
         .titletext {
-            font-size: 4.15dvw;
+            font-size: 4.15vw;
             font-weight: bold;
         }
         .subtitle {
             color: #ADADAD;
-            width: 27dvw;
+            width: 27vw;
         }
         .type {
             display: flex;
             flex-direction: column;
             a {
                 font-weight: lighter;
-                margin-bottom: 3dvw;
+                margin-bottom: 3vw;
                 color: $mainWhiteColor;
                 text-decoration: none;
             }
             img {
-                width: 3.48dvw;
-                margin-right: 1dvw;
+                width: 3.48vw;
+                margin-right: 1vw;
             }
         }
     }
     .leaveMessage {
         .titletext {
-            font-size: 4.15dvw;
+            font-size: 4.15vw;
             font-weight: bold;
         }
         form {
             display: flex;
             flex-direction: column;
-            gap: 2dvw;
+            gap: 2vw;
             .input-field {
                 background-color: inherit;
                 color: $mainWhiteColor;
-                border: 0.26dvw solid $mainWhiteColor;
-                border-radius: 1dvw;
-                font-size: 1.5dvw;
-                padding: 0.5dvw;
+                border: 0.26vw solid $mainWhiteColor;
+                border-radius: 1vw;
+                font-size: 1.5vw;
+                padding: 0.5vw;
             }
         }
         button {
             background-color: $mainWhiteColor;
             color: black;
-            font-size: 2dvw;
-            padding: 13.5px 2.44dvw;
-            border-radius: 2dvw;
+            font-size: 2vw;
+            padding: 13.5px 2.44vw;
+            border-radius: 2vw;
             width: fit-content;
             cursor: pointer;
         }
@@ -448,7 +448,7 @@ body {
 .title {
     text-align: center;
     color: $mainWhiteColor;
-    font-size: 4.5dvw;
+    font-size: 4.5vw;
     font-weight: bold;
     padding-top: 3%;
     padding-bottom: 3%;
@@ -470,41 +470,41 @@ body {
         flex-wrap: wrap;
         justify-content: center;
         margin: 0;
-        gap: 3dvw;
+        gap: 3vw;
         img {
-            max-height: 40dvw;
-            max-width: 90dvw;
+            max-height: 40vw;
+            max-width: 90vw;
         }
     }
     p {
         color: $mainWhiteColor;
-        font-size: 3dvw;
+        font-size: 3vw;
         text-align: center;
-        margin: 3dvw;
+        margin: 3vw;
         flex: none;
     }
     .memLogobook {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        gap: 1dvw;
+        gap: 1vw;
         justify-content: center;
-        margin: 1dvw;
+        margin: 1vw;
         img {
-            max-height: 40dvw;
-            max-width: 30dvw;
+            max-height: 40vw;
+            max-width: 30vw;
         }
     }
     .myLogo {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        row-gap: 1dvw;
+        row-gap: 1vw;
         justify-content: center;
-        margin: 1dvw;
+        margin: 1vw;
         img {
-            max-height: 13dvw;
-            max-width: 13dvw;
+            max-height: 13vw;
+            max-width: 13vw;
         }
     }
 }
@@ -512,13 +512,13 @@ body {
 .returnButton {
     background-color: inherit;
     color: $mainRedColor;
-    font-size: 2dvw;
+    font-size: 2vw;
     font-weight: bold;
-    padding: 13.5px 2.44dvw;
+    padding: 13.5px 2.44vw;
     border-radius: 32px;
-    border: 0.26dvw solid $mainRedColor;
+    border: 0.26vw solid $mainRedColor;
     width: fit-content;
-    margin: 2dvw;
+    margin: 2vw;
     cursor: pointer;
      :hover {
         color: $mainWhiteColor;
@@ -539,15 +539,15 @@ body {
     .mainPage {
         width: 100%;
         .myName {
-            font-size: 7dvw;
+            font-size: 7vw;
         }
         .whoAmI {
             flex-direction: column;
             p {
-                font-size: 13dvw;
+                font-size: 13vw;
             }
             img {
-                width: 70dvw;
+                width: 70vw;
             }
             .designer {
                 color: transparent;
@@ -556,53 +556,53 @@ body {
         }
     }
     .title {
-        font-size: 3dvh;
+        font-size: 3vh;
     }
     .top-line {
         li {
             a {
-                font-size: 5dvw;
+                font-size: 5vw;
             }
         }
     }
     .aboutMe {
         width: 100%;
         text-align: center;
-        gap: 2dvh;
+        gap: 2vh;
         .section {
             flex-direction: column;
-            gap: 5dvh;
+            gap: 5vh;
         }
         p {
-            font-size: 4dvh;
+            font-size: 4vh;
             width: auto;
         }
         .square-with-text {
-            width: 20dvh;
-            height: 20dvh;
+            width: 20vh;
+            height: 20vh;
             justify-content: center;
             p {
-                font-size: 3.5dvh;
+                font-size: 3.5vh;
             }
         }
     }
     .experience {
         width: 100%;
         img {
-            width: 25dvh;
+            width: 25vh;
         }
     }
     .devSkills {
         width: 100%;
         .skills {
             p {
-                font-size: 3dvh;
+                font-size: 3vh;
             }
             .line1 {
                 flex-wrap: wrap;
                 .first {
                     flex-basis: 100%;
-                    border-bottom: 0.26dvw solid $mainWhiteColor;
+                    border-bottom: 0.26vw solid $mainWhiteColor;
                 }
                 .second {
                     flex-basis: 50%;
@@ -630,11 +630,11 @@ body {
     .devProjects {
         width: 100%;
         .card {
-            width: 70dvh;
+            width: 70vh;
             max-width: 90%;
             .text-container {
                 p {
-                    font-size: 2dvh;
+                    font-size: 2vh;
                 }
             }
         }
@@ -643,7 +643,7 @@ body {
         width: 100%;
         .skills {
             p {
-                font-size: 3dvh;
+                font-size: 3vh;
             }
             .line1 {
                 .first {
@@ -681,14 +681,14 @@ body {
         width: 100%;
         flex-wrap: wrap;
         img {
-            width: 40dvh;
+            width: 40vh;
         }
         .column {
             img {
-                width: 80dvh;
+                width: 80vh;
             }
             button {
-                font-size: 3dvh;
+                font-size: 3vh;
             }
         }
     }
@@ -698,40 +698,40 @@ body {
         text-align: center;
         .contacts {
             .titletext {
-                font-size: 5dvh;
+                font-size: 5vh;
             }
             .subtitle {
-                font-size: 2dvh;
+                font-size: 2vh;
                 width: auto;
             }
             .type {
-                font-size: 3dvh;
+                font-size: 3vh;
                 img {
-                    width: 3dvh;
+                    width: 3vh;
                 }
             }
         }
         .leaveMessage {
-            padding: 5dvh;
+            padding: 5vh;
             justify-content: center;
             .titletext {
-                font-size: 5dvh;
+                font-size: 5vh;
             }
             form {
                 .input-field {
-                    font-size: 4dvh;
-                    border: 0.5dvh solid $mainWhiteColor;
-                    border-radius: 3dvh;
-                    padding: 2dvw;
+                    font-size: 4vh;
+                    border: 0.5vh solid $mainWhiteColor;
+                    border-radius: 3vh;
+                    padding: 2vw;
                 }
             }
             button {
-                font-size: 2dvh;
-                border-radius: 2dvw;
+                font-size: 2vh;
+                border-radius: 2vw;
             }
         }
     }
     .returnButton {
-        font-size: 1dvh;
+        font-size: 1vh;
     }
 }

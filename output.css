@@ -30,7 +30,7 @@ body {
 }
 .top-line li a {
   font-weight: bold;
-  font-size: 1.3dvw;
+  font-size: 1.3vw;
   cursor: pointer;
 }
 .top-line .nav {
@@ -52,7 +52,7 @@ body {
 .mainPage .myName {
   color: #ffffff;
   width: fit-content;
-  font-size: 2.5dvw;
+  font-size: 2.5vw;
   font-weight: bold;
   padding: 0 1% 0 1%;
   margin-left: 5%;
@@ -67,7 +67,7 @@ body {
 .mainPage .whoAmI p {
   color: #ff4242;
   font-weight: bold;
-  font-size: 5dvw;
+  font-size: 5vw;
   text-align: center;
 }
 .mainPage .whoAmI img {
@@ -88,18 +88,18 @@ body {
 .aboutMe .section {
   display: flex;
   flex-direction: row;
-  gap: 25dvw;
+  gap: 25vw;
   align-items: center;
-  margin-bottom: 2dvw;
+  margin-bottom: 2vw;
 }
 .aboutMe p {
-  font-size: 2dvw;
+  font-size: 2vw;
   color: #ffffff;
-  width: 42dvw;
+  width: 42vw;
 }
 .aboutMe .square-with-text {
-  width: 11dvw;
-  height: 11dvw;
+  width: 11vw;
+  height: 11vw;
   border-radius: 20px;
   background-color: #ff4242;
   display: flex;
@@ -108,7 +108,7 @@ body {
 }
 .aboutMe .square-with-text p {
   color: #ffffff;
-  font-size: 1.5dvw;
+  font-size: 1.5vw;
   text-shadow: 2px 2px 4px rgb(0, 0, 0);
   margin: 0;
 }
@@ -125,7 +125,7 @@ body {
 
 .devSkills {
   position: relative;
-  padding-bottom: 10dvw;
+  padding-bottom: 10vw;
 }
 .devSkills .skills {
   display: flex;
@@ -134,23 +134,23 @@ body {
 .devSkills .skills p {
   text-align: center;
   color: #ffffff;
-  font-size: 3dvw;
+  font-size: 3vw;
   margin: 0;
 }
 .devSkills .skills .line1 {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  border-top: 0.26dvw solid #ffffff;
-  border-bottom: 0.26dvw solid #ffffff;
+  border-top: 0.26vw solid #ffffff;
+  border-bottom: 0.26vw solid #ffffff;
 }
 .devSkills .skills .line1 .first {
   flex-basis: 20%;
 }
 .devSkills .skills .line1 .second {
   flex-basis: 0;
-  border-left: 0.26dvw solid #ffffff;
-  border-right: 0.26dvw solid #ffffff;
+  border-left: 0.26vw solid #ffffff;
+  border-right: 0.26vw solid #ffffff;
   flex-basis: 50%;
 }
 .devSkills .skills .line1 .third {
@@ -166,8 +166,8 @@ body {
 }
 .devSkills .skills .line2 .second {
   flex-basis: 0;
-  border-left: 0.26dvw solid #ffffff;
-  border-right: 0.26dvw solid #ffffff;
+  border-left: 0.26vw solid #ffffff;
+  border-right: 0.26vw solid #ffffff;
   flex-basis: 50%;
 }
 .devSkills .skills .line2 .third {
@@ -177,16 +177,16 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  border-top: 0.26dvw solid #ffffff;
-  border-bottom: 0.26dvw solid #ffffff;
+  border-top: 0.26vw solid #ffffff;
+  border-bottom: 0.26vw solid #ffffff;
 }
 .devSkills .skills .line3 .first {
   flex-basis: 30%;
 }
 .devSkills .skills .line3 .second {
   flex-basis: 0;
-  border-left: 0.26dvw solid #ffffff;
-  border-right: 0.26dvw solid #ffffff;
+  border-left: 0.26vw solid #ffffff;
+  border-right: 0.26vw solid #ffffff;
   flex-basis: 20%;
 }
 .devSkills .skills .line3 .third {
@@ -196,26 +196,26 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  border-bottom: 0.26dvw solid #ffffff;
+  border-bottom: 0.26vw solid #ffffff;
 }
 .devSkills .skills .line4 .first {
   flex-basis: 50%;
 }
 .devSkills .skills .line4 .third {
   flex-basis: 0;
-  border-left: 0.26dvw solid #ffffff;
-  border-right: 0.26dvw solid #ffffff;
+  border-left: 0.26vw solid #ffffff;
+  border-right: 0.26vw solid #ffffff;
   flex-basis: 50%;
   border-right: none;
 }
 
 .devProjects {
   position: relative;
-  padding-bottom: 10dvw;
+  padding-bottom: 10vw;
 }
 .devProjects .card {
-  width: 41dvw;
-  border: 0.26dvw solid #ffffff;
+  width: 41vw;
+  border: 0.26vw solid #ffffff;
   border-radius: 0;
   background-color: inherit;
   justify-content: center;
@@ -230,12 +230,12 @@ body {
   height: auto;
 }
 .devProjects .card .text-container {
-  border-top: 0.26dvw solid #ffffff;
+  border-top: 0.26vw solid #ffffff;
 }
 .devProjects .card .text-container p {
   color: #ffffff;
   margin: 0;
-  font-size: 1.56dvw;
+  font-size: 1.56vw;
 }
 .devProjects .card .text-container .tools {
   font-weight: lighter;
@@ -243,7 +243,7 @@ body {
 
 .designerSkills {
   position: relative;
-  padding-bottom: 10dvw;
+  padding-bottom: 10vw;
 }
 .designerSkills .skills {
   display: flex;
@@ -252,23 +252,23 @@ body {
 .designerSkills .skills p {
   text-align: center;
   color: #ffffff;
-  font-size: 3dvw;
+  font-size: 3vw;
   margin: 0;
 }
 .designerSkills .skills .line1 {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  border-top: 0.26dvw solid #ffffff;
-  border-bottom: 0.26dvw solid #ffffff;
+  border-top: 0.26vw solid #ffffff;
+  border-bottom: 0.26vw solid #ffffff;
 }
 .designerSkills .skills .line1 .first {
   flex-basis: 30%;
 }
 .designerSkills .skills .line1 .second {
   flex-basis: 0;
-  border-left: 0.26dvw solid #ffffff;
-  border-right: 0.26dvw solid #ffffff;
+  border-left: 0.26vw solid #ffffff;
+  border-right: 0.26vw solid #ffffff;
   flex-basis: 30%;
 }
 .designerSkills .skills .line1 .third {
@@ -284,8 +284,8 @@ body {
 }
 .designerSkills .skills .line2 .second {
   flex-basis: 0;
-  border-left: 0.26dvw solid #ffffff;
-  border-right: 0.26dvw solid #ffffff;
+  border-left: 0.26vw solid #ffffff;
+  border-right: 0.26vw solid #ffffff;
   flex-basis: 40%;
 }
 .designerSkills .skills .line2 .third {
@@ -295,16 +295,16 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  border-top: 0.26dvw solid #ffffff;
-  border-bottom: 0.26dvw solid #ffffff;
+  border-top: 0.26vw solid #ffffff;
+  border-bottom: 0.26vw solid #ffffff;
 }
 .designerSkills .skills .line3 .first {
   flex-basis: 20%;
 }
 .designerSkills .skills .line3 .second {
   flex-basis: 0;
-  border-left: 0.26dvw solid #ffffff;
-  border-right: 0.26dvw solid #ffffff;
+  border-left: 0.26vw solid #ffffff;
+  border-right: 0.26vw solid #ffffff;
   flex-basis: 40%;
 }
 .designerSkills .skills .line3 .third {
@@ -314,15 +314,15 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  border-bottom: 0.26dvw solid #ffffff;
+  border-bottom: 0.26vw solid #ffffff;
 }
 .designerSkills .skills .line4 .first {
   flex-basis: 50%;
 }
 .designerSkills .skills .line4 .third {
   flex-basis: 0;
-  border-left: 0.26dvw solid #ffffff;
-  border-right: 0.26dvw solid #ffffff;
+  border-left: 0.26vw solid #ffffff;
+  border-right: 0.26vw solid #ffffff;
   flex-basis: 50%;
   border-right: none;
 }
@@ -333,11 +333,11 @@ body {
   flex-direction: row;
   justify-content: center;
   margin: 0;
-  gap: 2dvw;
-  padding-bottom: 5dvw;
+  gap: 2vw;
+  padding-bottom: 5vw;
 }
 .designerProjects img {
-  width: 20dvw;
+  width: 20vw;
   max-width: 100%;
 }
 .designerProjects .column {
@@ -345,16 +345,16 @@ body {
   flex-direction: column;
   margin: 0;
   align-items: center;
-  gap: 4.5dvw;
+  gap: 4.5vw;
 }
 .designerProjects .column img {
-  width: 40dvw;
+  width: 40vw;
   max-width: 90%;
 }
 .designerProjects .column button {
   background-color: inherit;
   color: #ff4242;
-  font-size: 2dvw;
+  font-size: 2vw;
   font-weight: bold;
   padding: 13.5px 47px;
   border-radius: 32px;
@@ -374,22 +374,22 @@ body {
   color: #ffffff;
   justify-content: center;
   margin: 0;
-  gap: 5dvw;
-  padding-top: 7dvw;
-  padding-bottom: 2dvw;
+  gap: 5vw;
+  padding-top: 7vw;
+  padding-bottom: 2vw;
 }
 .contactMe .contacts {
   display: flex;
   flex-direction: column;
-  font-size: 1.5dvw;
+  font-size: 1.5vw;
 }
 .contactMe .contacts .titletext {
-  font-size: 4.15dvw;
+  font-size: 4.15vw;
   font-weight: bold;
 }
 .contactMe .contacts .subtitle {
   color: #ADADAD;
-  width: 27dvw;
+  width: 27vw;
 }
 .contactMe .contacts .type {
   display: flex;
@@ -397,37 +397,37 @@ body {
 }
 .contactMe .contacts .type a {
   font-weight: lighter;
-  margin-bottom: 3dvw;
+  margin-bottom: 3vw;
   color: #ffffff;
   text-decoration: none;
 }
 .contactMe .contacts .type img {
-  width: 3.48dvw;
-  margin-right: 1dvw;
+  width: 3.48vw;
+  margin-right: 1vw;
 }
 .contactMe .leaveMessage .titletext {
-  font-size: 4.15dvw;
+  font-size: 4.15vw;
   font-weight: bold;
 }
 .contactMe .leaveMessage form {
   display: flex;
   flex-direction: column;
-  gap: 2dvw;
+  gap: 2vw;
 }
 .contactMe .leaveMessage form .input-field {
   background-color: inherit;
   color: #ffffff;
-  border: 0.26dvw solid #ffffff;
-  border-radius: 1dvw;
-  font-size: 1.5dvw;
-  padding: 0.5dvw;
+  border: 0.26vw solid #ffffff;
+  border-radius: 1vw;
+  font-size: 1.5vw;
+  padding: 0.5vw;
 }
 .contactMe .leaveMessage button {
   background-color: #ffffff;
   color: black;
-  font-size: 2dvw;
-  padding: 13.5px 2.44dvw;
-  border-radius: 2dvw;
+  font-size: 2vw;
+  padding: 13.5px 2.44vw;
+  border-radius: 2vw;
   width: fit-content;
   cursor: pointer;
 }
@@ -439,7 +439,7 @@ body {
 .title {
   text-align: center;
   color: #ffffff;
-  font-size: 4.5dvw;
+  font-size: 4.5vw;
   font-weight: bold;
   padding-top: 3%;
   padding-bottom: 3%;
@@ -460,54 +460,54 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   margin: 0;
-  gap: 3dvw;
+  gap: 3vw;
 }
 .allDesign .images img {
-  max-height: 40dvw;
-  max-width: 90dvw;
+  max-height: 40vw;
+  max-width: 90vw;
 }
 .allDesign p {
   color: #ffffff;
-  font-size: 3dvw;
+  font-size: 3vw;
   text-align: center;
-  margin: 3dvw;
+  margin: 3vw;
   flex: none;
 }
 .allDesign .memLogobook {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 1dvw;
+  gap: 1vw;
   justify-content: center;
-  margin: 1dvw;
+  margin: 1vw;
 }
 .allDesign .memLogobook img {
-  max-height: 40dvw;
-  max-width: 30dvw;
+  max-height: 40vw;
+  max-width: 30vw;
 }
 .allDesign .myLogo {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  row-gap: 1dvw;
+  row-gap: 1vw;
   justify-content: center;
-  margin: 1dvw;
+  margin: 1vw;
 }
 .allDesign .myLogo img {
-  max-height: 13dvw;
-  max-width: 13dvw;
+  max-height: 13vw;
+  max-width: 13vw;
 }
 
 .returnButton {
   background-color: inherit;
   color: #ff4242;
-  font-size: 2dvw;
+  font-size: 2vw;
   font-weight: bold;
-  padding: 13.5px 2.44dvw;
+  padding: 13.5px 2.44vw;
   border-radius: 32px;
-  border: 0.26dvw solid #ff4242;
+  border: 0.26vw solid #ff4242;
   width: fit-content;
-  margin: 2dvw;
+  margin: 2vw;
   cursor: pointer;
 }
 .returnButton :hover {
@@ -529,66 +529,66 @@ body {
     width: 100%;
   }
   .mainPage .myName {
-    font-size: 7dvw;
+    font-size: 7vw;
   }
   .mainPage .whoAmI {
     flex-direction: column;
   }
   .mainPage .whoAmI p {
-    font-size: 13dvw;
+    font-size: 13vw;
   }
   .mainPage .whoAmI img {
-    width: 70dvw;
+    width: 70vw;
   }
   .mainPage .whoAmI .designer {
     color: transparent;
     -webkit-text-stroke: 3px #ff4242;
   }
   .title {
-    font-size: 3dvh;
+    font-size: 3vh;
   }
   .top-line li a {
-    font-size: 5dvw;
+    font-size: 5vw;
   }
   .aboutMe {
     width: 100%;
     text-align: center;
-    gap: 2dvh;
+    gap: 2vh;
   }
   .aboutMe .section {
     flex-direction: column;
-    gap: 5dvh;
+    gap: 5vh;
   }
   .aboutMe p {
-    font-size: 4dvh;
+    font-size: 4vh;
     width: auto;
   }
   .aboutMe .square-with-text {
-    width: 20dvh;
-    height: 20dvh;
+    width: 20vh;
+    height: 20vh;
     justify-content: center;
   }
   .aboutMe .square-with-text p {
-    font-size: 3.5dvh;
+    font-size: 3.5vh;
   }
   .experience {
     width: 100%;
   }
   .experience img {
-    width: 25dvh;
+    width: 25vh;
   }
   .devSkills {
     width: 100%;
   }
   .devSkills .skills p {
-    font-size: 3dvh;
+    font-size: 3vh;
   }
   .devSkills .skills .line1 {
     flex-wrap: wrap;
   }
   .devSkills .skills .line1 .first {
     flex-basis: 100%;
-    border-bottom: 0.26dvw solid #ffffff;
+    border-bottom: 0.26vw solid #ffffff;
   }
   .devSkills .skills .line1 .second {
     flex-basis: 50%;
@@ -610,17 +610,17 @@ body {
     width: 100%;
   }
   .devProjects .card {
-    width: 70dvh;
+    width: 70vh;
     max-width: 90%;
   }
   .devProjects .card .text-container p {
-    font-size: 2dvh;
+    font-size: 2vh;
   }
   .designerSkills {
     width: 100%;
   }
   .designerSkills .skills p {
-    font-size: 3dvh;
+    font-size: 3vh;
   }
   .designerSkills .skills .line1 .first {
     flex-basis: 100%;
@@ -651,13 +651,13 @@ body {
     flex-wrap: wrap;
   }
   .designerProjects img {
-    width: 40dvh;
+    width: 40vh;
   }
   .designerProjects .column img {
-    width: 80dvh;
+    width: 80vh;
   }
   .designerProjects .column button {
-    font-size: 3dvh;
+    font-size: 3vh;
   }
   .contactMe {
     width: 100%;
@@ -665,37 +665,37 @@ body {
     text-align: center;
   }
   .contactMe .contacts .titletext {
-    font-size: 5dvh;
+    font-size: 5vh;
   }
   .contactMe .contacts .subtitle {
-    font-size: 2dvh;
+    font-size: 2vh;
     width: auto;
   }
   .contactMe .contacts .type {
-    font-size: 3dvh;
+    font-size: 3vh;
   }
   .contactMe .contacts .type img {
-    width: 3dvh;
+    width: 3vh;
   }
   .contactMe .leaveMessage {
-    padding: 5dvh;
+    padding: 5vh;
     justify-content: center;
   }
   .contactMe .leaveMessage .titletext {
-    font-size: 5dvh;
+    font-size: 5vh;
   }
   .contactMe .leaveMessage form .input-field {
-    font-size: 4dvh;
-    border: 0.5dvh solid #ffffff;
-    border-radius: 3dvh;
-    padding: 2dvw;
+    font-size: 4vh;
+    border: 0.5vh solid #ffffff;
+    border-radius: 3vh;
+    padding: 2vw;
   }
   .contactMe .leaveMessage button {
-    font-size: 2dvh;
-    border-radius: 2dvw;
+    font-size: 2vh;
+    border-radius: 2vw;
   }
   .returnButton {
-    font-size: 1dvh;
+    font-size: 1vh;
   }
 }
 
