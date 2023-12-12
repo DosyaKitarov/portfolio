@@ -9,7 +9,7 @@ $mainPurpleColor: #2A2344;
 $mainWhiteColor: #ffffff;
 body {
     position: relative;
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     max-width: 100%;
     overflow-x: hidden;
 }
@@ -334,23 +334,6 @@ body {
     }
 }
 
-.returnButton {
-    background-color: inherit;
-    color: $mainRedColor;
-    font-size: 2dvw;
-    font-weight: bold;
-    padding: 13.5px 47px;
-    border-radius: 32px;
-    border: 7px solid $mainRedColor;
-    width: fit-content;
-    margin: 2dvw;
-    cursor: pointer;
-     :hover {
-        color: $mainWhiteColor;
-        border-color: $mainWhiteColor;
-    }
-}
-
 .designerProjects {
     position: relative;
     display: flex;
@@ -398,7 +381,7 @@ body {
     color: $mainWhiteColor;
     justify-content: center;
     margin: 0;
-    gap: 10dvw;
+    gap: 5dvw;
     padding-top: 7dvw;
     padding-bottom: 2dvw;
     .contacts {
@@ -414,9 +397,13 @@ body {
             width: 27dvw;
         }
         .type {
-            p {
+            display: flex;
+            flex-direction: column;
+            a {
                 font-weight: lighter;
                 margin-bottom: 3dvw;
+                color: $mainWhiteColor;
+                text-decoration: none;
             }
             img {
                 width: 3.48dvw;
@@ -425,45 +412,28 @@ body {
         }
     }
     .leaveMessage {
-        display: flex;
-        flex-direction: column;
-        gap: 2dvw;
         .titletext {
             font-size: 4.15dvw;
             font-weight: bold;
         }
-        .information {
+        form {
             display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
+            flex-direction: column;
             gap: 2dvw;
-            width: 40dvw;
             .input-field {
-                flex-basis: 45%;
                 background-color: inherit;
                 color: $mainWhiteColor;
                 border: 0.26dvw solid $mainWhiteColor;
                 border-radius: 1dvw;
                 font-size: 1.5dvw;
-            }
-            .message {
-                background-color: inherit;
-                color: $mainWhiteColor;
-                border: 0.26dvw solid $mainWhiteColor;
-                border-radius: 1dvw;
-                font-size: 1.5dvw;
-                font-style: italic;
-                height: 15dvw;
-                overflow-x: hidden;
-                text-overflow: ellipsis;
-                flex-basis: 95%;
+                padding: 0.5dvw;
             }
         }
         button {
             background-color: $mainWhiteColor;
             color: black;
             font-size: 2dvw;
-            padding: 13.5px 47px;
+            padding: 13.5px 2.44dvw;
             border-radius: 2dvw;
             width: fit-content;
             cursor: pointer;
@@ -536,6 +506,23 @@ body {
             max-height: 13dvw;
             max-width: 13dvw;
         }
+    }
+}
+
+.returnButton {
+    background-color: inherit;
+    color: $mainRedColor;
+    font-size: 2dvw;
+    font-weight: bold;
+    padding: 13.5px 2.44dvw;
+    border-radius: 32px;
+    border: 0.26dvw solid $mainRedColor;
+    width: fit-content;
+    margin: 2dvw;
+    cursor: pointer;
+     :hover {
+        color: $mainWhiteColor;
+        border-color: $mainWhiteColor;
     }
 }
 
@@ -710,27 +697,24 @@ body {
                 width: auto;
             }
             .type {
-                font-size: 2dvh;
+                font-size: 3dvh;
                 img {
-                    width: 4dvh;
+                    width: 3dvh;
                 }
             }
         }
         .leaveMessage {
             padding: 5dvh;
+            justify-content: center;
             .titletext {
                 font-size: 5dvh;
             }
-            .information {
-                flex-direction: column;
-                width: 80dvw;
+            form {
                 .input-field {
-                    max-width: 200%;
-                    font-size: 2dvh;
-                }
-                .message {
                     font-size: 4dvh;
-                    max-width: 100%
+                    border: 0.5dvh solid $mainWhiteColor;
+                    border-radius: 3dvh;
+                    padding: 2dvw;
                 }
             }
             button {
@@ -738,5 +722,8 @@ body {
                 border-radius: 2dvw;
             }
         }
+    }
+    .returnButton {
+        font-size: 1dvh;
     }
 }

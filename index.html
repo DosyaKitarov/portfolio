@@ -272,22 +272,26 @@
                 <p class="titletext ">Contact Me</p>
                 <p class="subtitle ">Let’s make something new, different and fascinating!</p>
                 <div class="type ">
-                    <p><img src="images/icons/telegram.svg ">@GM_Kitare</p>
-                    <p><img src="images/icons/instagram.svg ">@GM_Kitare</p>
-                    <p><img src="images/icons/gmail.svg ">DossymzhanZhailau@Gmail.com</p>
-                    <p>Version: 1.1</p>
-                    <p>What next will be added: Animations, Working message form</p>
+                    <a href="https://t.me/GM_Kitare"><img src="images/icons/telegram.svg ">@GM_Kitare</a>
+                    <a href="https://instagram.com/gm_kitare/"><img src="images/icons/instagram.svg ">@GM_Kitare</a>
+                    <a href="mailto:DossymzhanZhailau@Gmail.com"><img src="images/icons/gmail.svg ">DossymzhanZhailau@Gmail.com</a>
+                    <p>Version: 1.2</p>
+                    <p>Patch-note: Leave message is working. Added redirection to contacts.</p>
+
+                    <p>What next will be added: Animations</p>
 
                 </div>
             </div>
             <div class="leaveMessage ">
                 <p class="titletext ">Leave a message</p>
-                <div class="information ">
-                    <textarea class="input-field " placeholder="Name "></textarea>
-                    <textarea class="input-field " placeholder="Email "></textarea>
-                    <textarea placeholder="Your message " class="message "></textarea>
-                </div>
-                <button>Submit</button>
+                <form action="https://formspree.io/f/xqkvrjaq" method="POST">
+                    <input class="input-field" type="name" name="Name" placeholder="Name">
+                    <input class="input-field" type="email" name="Email" placeholder="Email">
+                    <textarea placeholder="Your message" class="input-field" name="message"></textarea>
+                    <button type="submit">Send</button>
+                </form>
+
+
             </div>
         </div>
     </div>

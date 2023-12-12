@@ -4,7 +4,7 @@
 }
 body {
   position: relative;
-  font-family: Montserrat;
+  font-family: "Montserrat";
   max-width: 100%;
   overflow-x: hidden;
 }
@@ -327,23 +327,6 @@ body {
   border-right: none;
 }
 
-.returnButton {
-  background-color: inherit;
-  color: #ff4242;
-  font-size: 2dvw;
-  font-weight: bold;
-  padding: 13.5px 47px;
-  border-radius: 32px;
-  border: 7px solid #ff4242;
-  width: fit-content;
-  margin: 2dvw;
-  cursor: pointer;
-}
-.returnButton :hover {
-  color: #ffffff;
-  border-color: #ffffff;
-}
-
 .designerProjects {
   position: relative;
   display: flex;
@@ -391,7 +374,7 @@ body {
   color: #ffffff;
   justify-content: center;
   margin: 0;
-  gap: 10dvw;
+  gap: 5dvw;
   padding-top: 7dvw;
   padding-bottom: 2dvw;
 }
@@ -408,55 +391,42 @@ body {
   color: #ADADAD;
   width: 27dvw;
 }
-.contactMe .contacts .type p {
+.contactMe .contacts .type {
+  display: flex;
+  flex-direction: column;
+}
+.contactMe .contacts .type a {
   font-weight: lighter;
   margin-bottom: 3dvw;
+  color: #ffffff;
+  text-decoration: none;
 }
 .contactMe .contacts .type img {
   width: 3.48dvw;
   margin-right: 1dvw;
 }
-.contactMe .leaveMessage {
-  display: flex;
-  flex-direction: column;
-  gap: 2dvw;
-}
 .contactMe .leaveMessage .titletext {
   font-size: 4.15dvw;
   font-weight: bold;
 }
-.contactMe .leaveMessage .information {
+.contactMe .leaveMessage form {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 2dvw;
-  width: 40dvw;
 }
-.contactMe .leaveMessage .information .input-field {
-  flex-basis: 45%;
+.contactMe .leaveMessage form .input-field {
   background-color: inherit;
   color: #ffffff;
   border: 0.26dvw solid #ffffff;
   border-radius: 1dvw;
   font-size: 1.5dvw;
-}
-.contactMe .leaveMessage .information .message {
-  background-color: inherit;
-  color: #ffffff;
-  border: 0.26dvw solid #ffffff;
-  border-radius: 1dvw;
-  font-size: 1.5dvw;
-  font-style: italic;
-  height: 15dvw;
-  overflow-x: hidden;
-  text-overflow: ellipsis;
-  flex-basis: 95%;
+  padding: 0.5dvw;
 }
 .contactMe .leaveMessage button {
   background-color: #ffffff;
   color: black;
   font-size: 2dvw;
-  padding: 13.5px 47px;
+  padding: 13.5px 2.44dvw;
   border-radius: 2dvw;
   width: fit-content;
   cursor: pointer;
@@ -526,6 +496,23 @@ body {
 .allDesign .myLogo img {
   max-height: 13dvw;
   max-width: 13dvw;
+}
+
+.returnButton {
+  background-color: inherit;
+  color: #ff4242;
+  font-size: 2dvw;
+  font-weight: bold;
+  padding: 13.5px 2.44dvw;
+  border-radius: 32px;
+  border: 0.26dvw solid #ff4242;
+  width: fit-content;
+  margin: 2dvw;
+  cursor: pointer;
+}
+.returnButton :hover {
+  color: #ffffff;
+  border-color: #ffffff;
 }
 
 @media (max-width: 768px) {
@@ -667,32 +654,30 @@ body {
     width: auto;
   }
   .contactMe .contacts .type {
-    font-size: 2dvh;
+    font-size: 3dvh;
   }
   .contactMe .contacts .type img {
-    width: 4dvh;
+    width: 3dvh;
   }
   .contactMe .leaveMessage {
     padding: 5dvh;
+    justify-content: center;
   }
   .contactMe .leaveMessage .titletext {
     font-size: 5dvh;
   }
-  .contactMe .leaveMessage .information {
-    flex-direction: column;
-    width: 80dvw;
-  }
-  .contactMe .leaveMessage .information .input-field {
-    max-width: 200%;
-    font-size: 2dvh;
-  }
-  .contactMe .leaveMessage .information .message {
+  .contactMe .leaveMessage form .input-field {
     font-size: 4dvh;
-    max-width: 100%;
+    border: 0.5dvh solid #ffffff;
+    border-radius: 3dvh;
+    padding: 2dvw;
   }
   .contactMe .leaveMessage button {
     font-size: 2dvh;
     border-radius: 2dvw;
+  }
+  .returnButton {
+    font-size: 1dvh;
   }
 }
 
