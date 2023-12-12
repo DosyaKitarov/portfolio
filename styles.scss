@@ -568,35 +568,35 @@ body {
     .aboutMe {
         width: 100%;
         text-align: center;
-        gap: 2vh;
+        gap: 2vw;
         .section {
             flex-direction: column;
-            gap: 5vh;
+            gap: 5vw;
         }
         p {
-            font-size: 4vh;
+            font-size: 5vw;
             width: auto;
         }
         .square-with-text {
-            width: 20vh;
-            height: 20vh;
+            width: 30vw;
+            height: 30vw;
             justify-content: center;
             p {
-                font-size: 3.5vh;
+                font-size: 5vw;
             }
         }
     }
     .experience {
         width: 100%;
         img {
-            width: 25vh;
+            width: 50vw;
         }
     }
     .devSkills {
         width: 100%;
         .skills {
             p {
-                font-size: 3vh;
+                font-size: 5vw;
             }
             .line1 {
                 flex-wrap: wrap;
@@ -630,11 +630,11 @@ body {
     .devProjects {
         width: 100%;
         .card {
-            width: 70vh;
+            width: 90vw;
             max-width: 90%;
             .text-container {
                 p {
-                    font-size: 2vh;
+                    font-size: 5vw;
                 }
             }
         }
@@ -643,7 +643,7 @@ body {
         width: 100%;
         .skills {
             p {
-                font-size: 3vh;
+                font-size: 5vw;
             }
             .line1 {
                 .first {
@@ -681,14 +681,14 @@ body {
         width: 100%;
         flex-wrap: wrap;
         img {
-            width: 40vh;
+            width: 80vw;
         }
         .column {
             img {
-                width: 80vh;
+                width: 90vw;
             }
             button {
-                font-size: 3vh;
+                font-size: 5vw;
             }
         }
     }
@@ -698,40 +698,42 @@ body {
         text-align: center;
         .contacts {
             .titletext {
-                font-size: 5vh;
+                font-size: 10vw;
             }
             .subtitle {
-                font-size: 2vh;
+                font-size: 5vw;
                 width: auto;
             }
             .type {
-                font-size: 3vh;
+                font-size: 6vw;
                 img {
-                    width: 3vh;
+                    width: 5vw;
                 }
             }
         }
         .leaveMessage {
-            padding: 5vh;
+            padding: 0 5vw 0 5vw;
             justify-content: center;
             .titletext {
-                font-size: 5vh;
+                font-size: 10vw;
             }
             form {
                 .input-field {
-                    font-size: 4vh;
-                    border: 0.5vh solid $mainWhiteColor;
-                    border-radius: 3vh;
+                    font-size: 5vw;
+                    border: 1vw solid $mainWhiteColor;
+                    border-radius: 3vw;
                     padding: 2vw;
                 }
             }
             button {
-                font-size: 2vh;
-                border-radius: 2vw;
+                font-size: 5vw;
+                border-radius: 4vw;
             }
         }
     }
     .returnButton {
-        font-size: 1vh;
+        font-size: 5vw;
+        border: 1vw solid $mainRedColor;
+        padding: 1.5vw;
     }
 }
