@@ -537,6 +537,7 @@ body {
         display: none;
     }
     .mainPage {
+        width: 100%;
         .myName {
             font-size: 7dvw;
         }
@@ -565,6 +566,7 @@ body {
         }
     }
     .aboutMe {
+        width: 100%;
         text-align: center;
         gap: 2dvh;
         .section {
@@ -585,11 +587,13 @@ body {
         }
     }
     .experience {
+        width: 100%;
         img {
             width: 25dvh;
         }
     }
     .devSkills {
+        width: 100%;
         .skills {
             p {
                 font-size: 3dvh;
@@ -624,6 +628,7 @@ body {
         }
     }
     .devProjects {
+        width: 100%;
         .card {
             width: 70dvh;
             max-width: 90%;
@@ -635,6 +640,7 @@ body {
         }
     }
     .designerSkills {
+        width: 100%;
         .skills {
             p {
                 font-size: 3dvh;
@@ -672,6 +678,7 @@ body {
         }
     }
     .designerProjects {
+        width: 100%;
         flex-wrap: wrap;
         img {
             width: 40dvh;
@@ -686,6 +693,7 @@ body {
         }
     }
     .contactMe {
+        width: 100%;
         flex-direction: column;
         text-align: center;
         .contacts {

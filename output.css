@@ -525,6 +525,9 @@ body {
   .circle {
     display: none;
   }
+  .mainPage {
+    width: 100%;
+  }
   .mainPage .myName {
     font-size: 7dvw;
   }
@@ -548,6 +551,7 @@ body {
     font-size: 5dvw;
   }
   .aboutMe {
+    width: 100%;
     text-align: center;
     gap: 2dvh;
   }
@@ -567,8 +571,14 @@ body {
   .aboutMe .square-with-text p {
     font-size: 3.5dvh;
   }
+  .experience {
+    width: 100%;
+  }
   .experience img {
     width: 25dvh;
+  }
+  .devSkills {
+    width: 100%;
   }
   .devSkills .skills p {
     font-size: 3dvh;
@@ -596,12 +606,18 @@ body {
   .devSkills .skills .line4 .third {
     display: none;
   }
+  .devProjects {
+    width: 100%;
+  }
   .devProjects .card {
     width: 70dvh;
     max-width: 90%;
   }
   .devProjects .card .text-container p {
     font-size: 2dvh;
+  }
+  .designerSkills {
+    width: 100%;
   }
   .designerSkills .skills p {
     font-size: 3dvh;
@@ -631,6 +647,7 @@ body {
     flex-basis: 100%;
   }
   .designerProjects {
+    width: 100%;
     flex-wrap: wrap;
   }
   .designerProjects img {
@@ -643,6 +660,7 @@ body {
     font-size: 3dvh;
   }
   .contactMe {
+    width: 100%;
     flex-direction: column;
     text-align: center;
   }
