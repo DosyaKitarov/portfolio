@@ -9,6 +9,29 @@ body {
   overflow-x: hidden;
 }
 
+.scrollToTop {
+  position: fixed;
+  bottom: 2%;
+  right: 2%;
+  z-index: 2;
+  background-color: #ff4242;
+  color: #ffffff;
+  border-radius: 50%;
+  border: 0.26vw solid #ffffff;
+  width: 5vw;
+  height: 5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.scrollToTop:hover {
+  background-color: #19142A;
+}
+.scrollToTop:hover svg {
+  stroke: #ff4242;
+}
+
 .mainBlackBg {
   background-color: #19142A;
 }
@@ -64,11 +87,17 @@ body {
   align-items: center;
   justify-content: center;
 }
-.mainPage .whoAmI p {
+.mainPage .whoAmI a {
   color: #ff4242;
   font-weight: bold;
   font-size: 5vw;
   text-align: center;
+  text-decoration: underline;
+  text-decoration-thickness: 0.1vw;
+  cursor: pointer;
+}
+.mainPage .whoAmI a:hover {
+  color: #ffffff;
 }
 .mainPage .whoAmI img {
   width: 30%;
@@ -76,6 +105,10 @@ body {
 .mainPage .whoAmI .designer {
   color: transparent;
   -webkit-text-stroke: 3px #ff4242;
+}
+.mainPage .whoAmI .designer:hover {
+  color: #ffffff;
+  -webkit-text-stroke: 3px #ffffff;
 }
 
 .aboutMe {
@@ -459,7 +492,7 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 0;
+  margin: 0 auto;
   gap: 3vw;
 }
 .allDesign .images img {
@@ -507,10 +540,11 @@ body {
   border-radius: 32px;
   border: 0.26vw solid #ff4242;
   width: fit-content;
-  margin: 2vw;
+  margin: 1vw;
   cursor: pointer;
 }
-.returnButton :hover {
+
+.returnButton:hover {
   color: #ffffff;
   border-color: #ffffff;
 }

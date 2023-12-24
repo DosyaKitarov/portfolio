@@ -82,16 +82,16 @@
         </div>
         <div class="mainPage ">
             <p class="textBold mainRedBg myName ">HI! I'm Dossymzhan</p>
-            <div class="whoAmI ">
-                <p>SOFTWARE<br>ENGINEER</p>
+            <div class="whoAmI">
+                <a onclick="scrollToSection('devProjects')">SOFTWARE<br>ENGINEER</a>
                 <img src="images/me.png ">
-                <p class="designer ">GRAPHIC<br>DESIGNER</p>
+                <a class="designer " onclick="scrollToSection('designerProjects') ">GRAPHIC<br>DESIGNER</a>
             </div>
         </div>
 
     </div>
     <!-- about me -->
-    <div class="mainPurpleBg " id="aboutMe">
+    <div class="mainPurpleBg " id="aboutMe ">
         <p class="title ">About Me</p>
         <div class="aboutMe ">
             <div class="section ">
@@ -182,7 +182,7 @@
         <p class="title ">Projects</p>
         <div class="devProjects ">
             <div class="card ">
-                <a href="https://dosyakitarov.github.io/R6SWebka/index.html " target="_blank">
+                <a href="https://dosyakitarov.github.io/R6SWebka/index.html " target="_blank ">
 
                     <div class="image-container ">
                         <img src="images/R6S WebSite.png " alt="Изображение ">
@@ -261,7 +261,7 @@
             <img src="images/cases/MacBook Pro Black.png ">
             <div class="column ">
                 <img src="images/cases/Lancer Team 2.png ">
-                <button type="button " onclick="location.href='allDesignProjects.html'" target="_blank">Viewmore</button>
+                <button type="button " onclick="location.href='allDesignProjects.html' " target="_blank ">Viewmore</button>
             </div>
         </div>
     </div>
@@ -272,9 +272,9 @@
                 <p class="titletext ">Contact Me</p>
                 <p class="subtitle ">Let’s make something new, different and fascinating!</p>
                 <div class="type ">
-                    <a href="https://t.me/GM_Kitare"><img src="images/icons/telegram.svg ">@GM_Kitare</a>
-                    <a href="https://instagram.com/gm_kitare/"><img src="images/icons/instagram.svg ">@GM_Kitare</a>
-                    <a href="mailto:DossymzhanZhailau@Gmail.com"><img src="images/icons/gmail.svg ">DossymzhanZhailau</a>
+                    <a href="https://t.me/GM_Kitare "><img src="images/icons/telegram.svg ">@GM_Kitare</a>
+                    <a href="https://instagram.com/gm_kitare/ "><img src="images/icons/instagram.svg ">@GM_Kitare</a>
+                    <a href="mailto:DossymzhanZhailau@Gmail.com "><img src="images/icons/gmail.svg ">DossymzhanZhailau</a>
                     <p>Version: 1.21</p>
                     <p>Patch-note: Leave message is working. Added redirection to contacts.</p>
 
@@ -284,18 +284,22 @@
             </div>
             <div class="leaveMessage ">
                 <p class="titletext ">Leave a message</p>
-                <form action="https://formspree.io/f/xqkvrjaq" method="POST">
-                    <input class="input-field" type="name" name="Name" placeholder="Name">
-                    <input class="input-field" type="email" name="Email" placeholder="Email">
-                    <textarea placeholder="Your message" class="input-field" name="message"></textarea>
-                    <button type="submit">Send</button>
+                <form action="https://formspree.io/f/xqkvrjaq " method="POST ">
+                    <input class="input-field " type="name " name="Name " placeholder="Name ">
+                    <input class="input-field " type="email " name="Email " placeholder="Email ">
+                    <textarea placeholder="Your message " class="input-field " name="message "></textarea>
+                    <button type="submit ">Send</button>
                 </form>
 
 
             </div>
         </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <button id="scrollToTopBtn" onclick="scrollToTop()" class="scrollToTop"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill="white" stroke="white" stroke-width="2" fill-rule="evenodd" clip-rule="evenodd">
+    <path d="M11 2.206l-6.235 7.528-.765-.645 7.521-9 7.479 9-.764.646-6.236-7.53v21.884h-1v-21.883z"/>
+</svg>
+</button>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js " integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL " crossorigin="anonymous "></script>
     <script src=" circles.js "></script>
     <script src="rectangles.js "></script>
     <script src="animations.js "></script>

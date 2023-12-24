@@ -14,6 +14,29 @@ body {
     overflow-x: hidden;
 }
 
+.scrollToTop {
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+    z-index: 2;
+    background-color: $mainRedColor;
+    color: $mainWhiteColor;
+    border-radius: 50%;
+    border: 0.26vw solid $mainWhiteColor;
+    width: 5vw;
+    height: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    &:hover {
+        background-color: $mainBlackColor;
+        svg {
+            stroke: $mainRedColor;
+        }
+    }
+}
+
 .mainBlackBg {
     background-color: $mainBlackColor;
 }
@@ -73,11 +96,17 @@ body {
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        p {
+        a {
             color: $mainRedColor;
             font-weight: bold;
             font-size: 5vw;
             text-align: center;
+            text-decoration: underline;
+            text-decoration-thickness: 0.1vw;
+            cursor: pointer;
+            &:hover {
+                color: $mainWhiteColor;
+            }
         }
         img {
             width: 30%;
@@ -85,6 +114,10 @@ body {
         .designer {
             color: transparent;
             -webkit-text-stroke: 3px $mainRedColor;
+            &:hover {
+                color: $mainWhiteColor;
+                -webkit-text-stroke: 3px $mainWhiteColor;
+            }
         }
     }
 }
@@ -469,7 +502,7 @@ body {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
-        margin: 0;
+        margin: 0 auto;
         gap: 3vw;
         img {
             max-height: 40vw;
@@ -518,12 +551,13 @@ body {
     border-radius: 32px;
     border: 0.26vw solid $mainRedColor;
     width: fit-content;
-    margin: 2vw;
+    margin: 1vw;
     cursor: pointer;
-     :hover {
-        color: $mainWhiteColor;
-        border-color: $mainWhiteColor;
-    }
+}
+
+.returnButton:hover {
+    color: $mainWhiteColor;
+    border-color: $mainWhiteColor;
 }
 
 @media (max-width:768px) {
