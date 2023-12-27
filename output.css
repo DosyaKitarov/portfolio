@@ -90,7 +90,7 @@ body {
 .mainPage .whoAmI a {
   color: #ff4242;
   font-weight: bold;
-  font-size: 5vw;
+  font-size: 1vw;
   text-align: center;
   text-decoration: underline;
   text-decoration-thickness: 0.1vw;
@@ -568,7 +568,7 @@ body {
   .mainPage .whoAmI {
     flex-direction: column;
   }
-  .mainPage .whoAmI p {
+  .mainPage .whoAmI a {
     font-size: 13vw;
   }
   .mainPage .whoAmI img {
@@ -732,6 +732,10 @@ body {
     font-size: 5vw;
     border: 1vw solid #ff4242;
     padding: 1.5vw;
+  }
+  .scrollToTop {
+    width: 15vw;
+    height: 15vw;
   }
 }
 

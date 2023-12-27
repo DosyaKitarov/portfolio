@@ -99,7 +99,7 @@ body {
         a {
             color: $mainRedColor;
             font-weight: bold;
-            font-size: 5vw;
+            font-size: 1vw;
             text-align: center;
             text-decoration: underline;
             text-decoration-thickness: 0.1vw;
@@ -577,7 +577,7 @@ body {
         }
         .whoAmI {
             flex-direction: column;
-            p {
+            a {
                 font-size: 13vw;
             }
             img {
@@ -769,5 +769,9 @@ body {
         font-size: 5vw;
         border: 1vw solid $mainRedColor;
         padding: 1.5vw;
+    }
+    .scrollToTop {
+        width: 15vw;
+        height: 15vw;
     }
 }
