@@ -487,6 +487,9 @@ body {
   overflow-x: hidden;
 }
 
+.allDesign {
+  justify-content: center;
+}
 .allDesign .images {
   display: flex;
   flex-direction: row;
@@ -499,12 +502,81 @@ body {
   max-height: 40vw;
   max-width: 90vw;
 }
+.allDesign .images .card {
+  color: #ffffff;
+  max-height: 40vw;
+  max-width: 90vw;
+  position: relative;
+  cursor: pointer;
+}
+.allDesign .images .card .image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s ease-in-out;
+}
+.allDesign .images .card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 2px solid white;
+  border-radius: 0.5vw;
+  opacity: 0;
+  transition: 0.4s ease-in-out;
+}
+.allDesign .images .card:hover img {
+  filter: grayscale(1) brightness(0.4) blur(0.1vw);
+}
+.allDesign .images .card:hover::after {
+  opacity: 1;
+  inset: 2.5vw;
+}
+.allDesign .images .card .content {
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.allDesign .images .card .content h2,
+.allDesign .images .card .content p {
+  opacity: 0;
+  transition: 0.4s 0.2s ease;
+}
+.allDesign .images .card .content h2 {
+  margin-bottom: 1vw;
+  scale: 0.7;
+}
+.allDesign .images .card .content p {
+  font-size: 1vw;
+  line-height: 1.5;
+  transform: translateY(50%);
+}
+.allDesign .images .card:hover .content h2 {
+  scale: 1;
+  opacity: 1;
+}
+.allDesign .images .card:hover .content p {
+  opacity: 1;
+  transform: translateY(0);
+}
 .allDesign p {
   color: #ffffff;
   font-size: 3vw;
   text-align: center;
   margin: 3vw;
   flex: none;
+}
+.allDesign .myLogo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+.allDesign .myLogo img {
+  max-height: 13vw;
+  max-width: 13vw;
 }
 .allDesign .memLogobook {
   display: flex;
@@ -517,18 +589,6 @@ body {
 .allDesign .memLogobook img {
   max-height: 40vw;
   max-width: 30vw;
-}
-.allDesign .myLogo {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  row-gap: 1vw;
-  justify-content: center;
-  margin: 1vw;
-}
-.allDesign .myLogo img {
-  max-height: 13vw;
-  max-width: 13vw;
 }
 
 .returnButton {
@@ -736,6 +796,32 @@ body {
   .scrollToTop {
     width: 15vw;
     height: 15vw;
+  }
+  .allDesign .images img {
+    max-height: none;
+  }
+  .allDesign .images .card {
+    max-height: none;
+  }
+  .allDesign .images .card .content h2 {
+    font-size: 10vw;
+  }
+  .allDesign .images .card .content p {
+    font-size: 4vw;
+  }
+  .allDesign .memLogobook img {
+    max-height: none;
+    max-width: 90vw;
+  }
+  .allDesign p {
+    font-size: 5vw;
+  }
+  .allDesign .myLogo {
+    flex-wrap: wrap;
+  }
+  .allDesign .myLogo img {
+    max-height: none;
+    max-width: 70vw;
   }
 }
 
