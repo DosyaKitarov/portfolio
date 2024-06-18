@@ -1,3 +1,28 @@
+html[light-mode="light"] {
+    --bg1-color: rgba(0, 0, 0, 0);
+    --text-color: #6c757d;
+    --shadow-col1: #babdc2;
+    --shadow-col2: #ffffff;
+    --meta-col: #444;
+    --head-col: black;
+}
+
+html[light-mode="dark"] {
+    --bg1-color: #272727;
+    --text-color: #fff;
+    --bg-txt-img: linear-gradient(315deg, #d5adc8 0%, #ff8489 74%);
+    --txt-fill: transparent;
+    --shadow-col1: #191919;
+    --shadow-col2: #1d1d1d;
+    --meta-col: rgb(155, 149, 149);
+    --head-col: #fff;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+
 /* gallery section starts */
 
 .gallery_section span,
@@ -17,7 +42,6 @@
     padding: 0;
     display: flex;
     justify-content: center;
-    background: #fbfbf0;
 }
 
 .gallery_section a {
@@ -40,6 +64,7 @@
     width: 43.75rem;
     min-height: 100vh;
     padding: 2rem 0;
+    margin: 1rem;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(9, 9rem);
     grid-gap: 1.5rem;
@@ -164,7 +189,6 @@ div.picture-container:nth-child(8) {
 .container_gallery {
     padding-top: 5px;
     padding-bottom: 100px;
-    background-color: #fbfbf0;
 }
 
 .container_gallery h2 {
@@ -183,7 +207,6 @@ div.picture-container:nth-child(8) {
 /*hero section starts*/
 
 .hero {
-    background-color: white;
     display: flex;
     height: 100vh;
 }
@@ -198,7 +221,6 @@ div.picture-container:nth-child(8) {
 }
 
 .hero .item2 {
-    background-color: white;
     /* rgb(245, 225, 245) */
     width: 50%;
     display: flex;
