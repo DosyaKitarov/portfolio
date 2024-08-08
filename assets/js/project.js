@@ -5,13 +5,22 @@ const projectcards = document.querySelector(".projectcards");
 
 // Array of object for projects
 const projects = [{
-    title: "Ai2ch",
-    cardImage: "assets/images/project-page/ai2ch.png",
-    description: "Forum website final project for Advanced Programming. It is modified website of snippetbox from Let's Go book.",
-    tagimg: "https://cdn.iconscout.com/icon/free/png-512/react-1-282599.png",
-    Previewlink: "",
-    Githublink: "https://github.com/DosyaKitarov/lets-go",
-}];
+        title: "Ai2ch",
+        cardImage: "assets/images/project-page/ai2ch.png",
+        description: "Forum website final project for Advanced Programming. It is modified website of snippetbox from Let's Go book.",
+        tagimg: "https://cdn.iconscout.com/icon/free/png-512/react-1-282599.png",
+        Previewlink: "",
+        Githublink: "https://github.com/DosyaKitarov/lets-go",
+    },
+    {
+        title: "Sen English Landing",
+        cardImage: "assets/images/project-page/senEnglish.png",
+        description: "Landing page for English Courses 'Sen English'. Paid project for a client.",
+        tagimg: "https://cdn.iconscout.com/icon/free/png-512/react-1-282599.png",
+        Previewlink: "https://SenEnglish.kz",
+        Githublink: "https://dosyakitarov.github.io/SenEnglish/",
+    }
+];
 
 // function for rendering project cards data
 const showCards = () => {
