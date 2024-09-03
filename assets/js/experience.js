@@ -67,6 +67,10 @@ const volunteershipcards = [{
         title: "2024 IEEE SIST International Conference",
         cardImage: "assets/images/experience-page/ieeesist.jpg",
         description: "The 2024 IEEE 4th International Conference on Smart Information Systems and Technologies (SIST)"
+    },{
+      title:"FIDE World Rapid and Blitz Team Championship 2024",
+      cardImage:"assets/images/experience-page/fide2.png",
+      description:"Volunteered at the FIDE World Rapid and Blitz Team Championship 2024 (29 July - 6 August), chess championship held in Astana, Kazakhstan. "
     }
 ];
 
@@ -77,7 +81,7 @@ const showCards = () => {
         (output += `        
       <div class="card volunteerCard" data-aos="fade-down" data-aos-easing="linear" data-aos-delay="100" data-aos-duration="600" style="height: 550px;width:400px">
       
-      <img src="${cardImage}" height="250" width="65" class="card-img" style="border-radius:10px">
+      <img src="${cardImage}" height="fit-content" width="65" class="card-img" style="border-radius:10px">
       <div class="content">
           <h2 class="volunteerTitle">${title}</h2><br>
           <p class="copy">${description}</p></div>
