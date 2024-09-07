@@ -104,3 +104,52 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+@media (max-width: 768px) {
+    .header-text {
+        width: 100%;
+        max-width: 90%;
+        padding: 0 5%;
+    }
+    .intro-header {
+        height: 60vw;
+        margin-top: 20vw;
+    }
+    .post-heading h1 {
+        font-size: 7vw;
+    }
+    .post-heading h2 {
+        font-size: 4vw;
+    }
+    .post-heading .meta {
+        font-size: 3.5vw;
+    }
+    .post-content {
+        margin: 10vw 5vw;
+    }
+    .post-content p,
+    li {
+        font-size: 5vw;
+        margin: 4vw 0;
+    }
+    .section-heading {
+        font-size: 7vw;
+        margin-top: 5vw;
+        border-bottom: 0.34vw solid #333;
+        padding-bottom: 1.67vw;
+    }
+    blockquote {
+        padding: 1.67vw 3.34vw;
+        border-left: 0.84vw solid #333;
+    }
+    .many-images {
+        gap: 6vw;
+    }
+    .img-responsive {
+        max-width: 80vw;
+        max-height: 60vh;
+    }
+    .caption {
+        font-size: 4vw;
+    }
+}
