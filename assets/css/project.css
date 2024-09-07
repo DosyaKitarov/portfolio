@@ -1,4 +1,4 @@
-html[data-theme="light"] {
+html[light-mode="light"] {
     --bg-col: #fafafa;
     --shadow1: rgba(0, 0, 0, 0.3);
     --shadow2: rgba(0, 0, 0, 0.2);
@@ -9,7 +9,7 @@ html[data-theme="light"] {
     --neu-icon: #c3c3c3;
 }
 
-html[data-theme="dark"] {
+html[light-mode="dark"] {
     --bg-col: #272727;
     --shadow1: rgba(128, 122, 122, 0.233);
     --shadow2: rgba(231, 216, 216, 0.007);

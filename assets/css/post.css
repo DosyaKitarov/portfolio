@@ -1,0 +1,106 @@
+.header-text {
+    width: 90%;
+    max-width: 45vw;
+    margin: 0 auto;
+    padding: 0 1.25vw;
+}
+
+.intro-header {
+    background-size: cover;
+    background-position: center;
+    height: 40vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+}
+
+.post-heading h1 {
+    font-size: 3vw;
+    font-weight: 700;
+    margin: 0;
+}
+
+.post-heading h2 {
+    font-size: 1.5vw;
+    margin: 1vw 0;
+}
+
+.post-heading .meta {
+    font-size: 1vw;
+}
+
+.post-heading .meta a {
+    color: #00d5ff;
+    text-decoration: underline;
+}
+
+.post-content {
+    margin: 5vw 10vw;
+}
+
+.post-content p,
+li {
+    margin: 1.25vw 0;
+    font-size: 1.2vw;
+}
+
+.section-heading {
+    font-size: 2vw;
+    margin-top: 2.5vw;
+    border-bottom: 0.17vw solid #333;
+    padding-bottom: 0.83vw;
+}
+
+blockquote {
+    font-style: italic;
+    margin: 1.67vw 0;
+    /* 20px to vw */
+    padding: 0.83vw 1.67vw;
+    /* 10px and 20px to vw */
+    border-left: 0.42vw solid #333;
+    /* 5px to vw */
+    background: #f9f9f9;
+}
+
+.image-link img {
+    width: 100%;
+    height: auto;
+}
+
+.many-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3vw;
+}
+
+.mid-image {
+    justify-content: center;
+    text-align: center;
+}
+
+.img-responsive {
+    display: block;
+    max-width: 40vw;
+    max-height: 30vw;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+.caption {
+    display: block;
+    margin-top: 0.83vw;
+    font-size: 1vw;
+    color: #555;
+}
+
+a {
+    color: #0022ff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

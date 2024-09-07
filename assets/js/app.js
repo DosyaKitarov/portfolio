@@ -22,11 +22,12 @@ let header = $(`
 
 <div class="collapse navbar-collapse " id="navbarSupportedContent">
   <ul class="navbar-nav ml-auto" id = "navbar-content">
-   <li class="nav-item nav-item-hover"><a class="nav-link" href="index.html">Home</a></li>
-    <li class="nav-item nav-item-hover"><a class="nav-link" href="skills.html">Skills</a></li>
-   <li class="nav-item nav-item-hover"><a class="nav-link" href="experience.html">Experience</a></li>
-   <li class="nav-item nav-item-hover"><a class="nav-link" href="devProjects.html">Dev Projects</a></li>
-   <li class="nav-item nav-item-hover"><a class="nav-link" href="design.html">Design Projects</a></li>
+   <li class="nav-item nav-item-hover"><a class="nav-link" href="/index.html">Home</a></li>
+    <li class="nav-item nav-item-hover"><a class="nav-link" href="/skills.html">Skills</a></li>
+   <li class="nav-item nav-item-hover"><a class="nav-link" href="/experience.html">Experience</a></li>
+   <li class="nav-item nav-item-hover"><a class="nav-link" href="/devProjects.html">Dev Projects</a></li>
+   <li class="nav-item nav-item-hover"><a class="nav-link" href="/design.html">Design Projects</a></li>
+   <li class="nav-item nav-item-hover"><a class="nav-link" href="/blog.html">Blog</a></li>
     <li class="nav-item">
    <input type="checkbox" id="dark_toggler" class="dark_toggler" aria-label="Toggle Light Mode" onclick="toggle_light_mode()" checked>
    </li>
@@ -141,7 +142,7 @@ let footer = $(`
                   <input id="email" type="email" name="email" placeholder="Email Address" required/>                  
                   <textarea id="textArea" name="message" placeholder="Type your Message" required></textarea>
               
-                  <div id="main">
+                  <div id="button">
                     <button id="lnch" type="button" value="Send" >Send</button>
                     <div id="lnch_btn"><i class="fas fa-space-shuttle"></i></div>
                   </div>
