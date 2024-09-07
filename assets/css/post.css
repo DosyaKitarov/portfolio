@@ -41,7 +41,7 @@
 }
 
 .post-content p,
-li {
+.post-content li {
     margin: 1.25vw 0;
     font-size: 1.2vw;
 }
@@ -128,7 +128,7 @@ a:hover {
         margin: 10vw 5vw;
     }
     .post-content p,
-    li {
+    .post-content li {
         font-size: 5vw;
         margin: 4vw 0;
     }
