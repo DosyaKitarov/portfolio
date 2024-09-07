@@ -420,6 +420,13 @@ body:not(.is-touch) .tiles article:hover .content {
     border-radius: 6px;
 }
 
+@media (max-width: 600px) {
+    .fi {
+        font-size: 10vw;
+        margin: 2vw;
+    }
+}
+
 body.is-preload .tiles article {
     -moz-transform: scale(0.9);
     -webkit-transform: scale(0.9);
