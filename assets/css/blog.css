@@ -72,10 +72,6 @@ i {
     font-style: italic;
 }
 
-p {
-    margin: 0 0 2em 0;
-}
-
 h1 {
     font-size: 2.75em;
     font-weight: 700;
@@ -306,7 +302,7 @@ hr.major {
     z-index: 2;
 }
 
-.tiles article>a {
+.tiles article>.link {
     display: -moz-flex;
     display: -webkit-flex;
     display: -ms-flex;
@@ -341,19 +337,19 @@ hr.major {
     z-index: 3;
 }
 
-.tiles article>a> :last-child {
+.tiles article>.link> :last-child {
     margin: 0;
 }
 
-.tiles article>a:hover {
+.tiles article>.link:hover {
     color: #ffffff !important;
 }
 
-.tiles article>a h2 {
+.tiles article>.link h2 {
     margin: 0;
 }
 
-.tiles article>a .content {
+.tiles article>.link .content {
     -moz-transition: max-height 0.5s ease, opacity 0.5s ease;
     -webkit-transition: max-height 0.5s ease, opacity 0.5s ease;
     -ms-transition: max-height 0.5s ease, opacity 0.5s ease;
@@ -365,7 +361,7 @@ hr.major {
     opacity: 0;
 }
 
-.tiles article>a .content> :last-child {
+.tiles article>.link .content> :last-child {
     margin-bottom: 0;
 }
 
@@ -416,6 +412,12 @@ body:not(.is-touch) .tiles article:hover .content {
 
 *+.tiles {
     margin-top: 2em;
+}
+
+.fi {
+    font-size: 2.8vw;
+    margin: 1vw;
+    border-radius: 6px;
 }
 
 body.is-preload .tiles article {
