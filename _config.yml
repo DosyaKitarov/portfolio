@@ -1,0 +1,27 @@
+# Site settings
+title: "Dosya Kitarov | Portfolio"
+email: dossymzhanzhailau@gmail.com
+url: "https://dosyakitarov.github.io/portfolio/"
+
+# Build settings
+markdown: kramdown
+theme: minima
+google_analytics: G-M439VMZ7FM
+
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Dosya Kitarov"
+
+# Social media links
+social_links:
+  github: https://github.com/dosyakitarov
+
+# Other settings
+paginate: 5
+paginate_path: "/page:num/"
